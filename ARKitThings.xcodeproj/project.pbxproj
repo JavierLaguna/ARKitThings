@@ -53,6 +53,7 @@
 		492D05632BE51D0600668245 /* ARKitThings */ = {
 			isa = PBXGroup;
 			children = (
+				492D05742BE51E9100668245 /* Scenes */,
 				492D05642BE51D0600668245 /* AppDelegate.swift */,
 				492D05662BE51D0600668245 /* art.scnassets */,
 				492D05682BE51D0600668245 /* ViewController.swift */,
@@ -60,6 +61,13 @@
 				492D056D2BE51D0700668245 /* Assets.xcassets */,
 			);
 			path = ARKitThings;
+			sourceTree = "<group>";
+		};
+		492D05742BE51E9100668245 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
