@@ -42,6 +42,10 @@ final class MainViewController: UIViewController {
             "Loading Models",
             LoadingModelsViewController()
         ),
+        (
+            "Missile Launch",
+            MissileLaunchViewController()
+        ),
     ]
     
     override func viewDidLoad() {

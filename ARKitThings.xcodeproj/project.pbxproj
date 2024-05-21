@@ -20,6 +20,15 @@
 		49536BBE2BFCBC1A0083CD04 /* _6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49536BBA2BFCBC1A0083CD04 /* _6.jpg */; };
 		49536BBF2BFCBC1A0083CD04 /* tischholz2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49536BBB2BFCBC1A0083CD04 /* tischholz2.jpg */; };
 		49536BC02BFCBC1A0083CD04 /* bench.dae in Resources */ = {isa = PBXBuildFile; fileRef = 49536BBC2BFCBC1A0083CD04 /* bench.dae */; };
+		49536BC42BFCE3DC0083CD04 /* MissileLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49536BC22BFCE3DC0083CD04 /* MissileLaunchViewController.swift */; };
+		49536BC52BFCE3DC0083CD04 /* MissileLaunchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49536BC32BFCE3DC0083CD04 /* MissileLaunchViewController.xib */; };
+		49536BCE2BFCE4C90083CD04 /* missle-texture.png in Resources */ = {isa = PBXBuildFile; fileRef = 49536BC72BFCE4C80083CD04 /* missle-texture.png */; };
+		49536BCF2BFCE4C90083CD04 /* fire.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 49536BC82BFCE4C90083CD04 /* fire.scnp */; };
+		49536BD02BFCE4C90083CD04 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = 49536BC92BFCE4C90083CD04 /* smoke.png */; };
+		49536BD12BFCE4C90083CD04 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 49536BCA2BFCE4C90083CD04 /* spark.png */; };
+		49536BD22BFCE4C90083CD04 /* missile.scn in Resources */ = {isa = PBXBuildFile; fileRef = 49536BCB2BFCE4C90083CD04 /* missile.scn */; };
+		49536BD42BFCE4C90083CD04 /* smoke.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 49536BCD2BFCE4C90083CD04 /* smoke.scnp */; };
+		49536BD62BFCE5290083CD04 /* Missile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49536BD52BFCE5290083CD04 /* Missile.swift */; };
 		4958E3F92BED072E007F1757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958E3F82BED072E007F1757 /* AppDelegate.swift */; };
 		4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958E3FA2BED072E007F1757 /* SceneDelegate.swift */; };
 		4958E4022BED072F007F1757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4958E4012BED072F007F1757 /* Assets.xcassets */; };
@@ -45,6 +54,15 @@
 		49536BBA2BFCBC1A0083CD04 /* _6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = _6.jpg; sourceTree = "<group>"; };
 		49536BBB2BFCBC1A0083CD04 /* tischholz2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tischholz2.jpg; sourceTree = "<group>"; };
 		49536BBC2BFCBC1A0083CD04 /* bench.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = bench.dae; sourceTree = "<group>"; };
+		49536BC22BFCE3DC0083CD04 /* MissileLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissileLaunchViewController.swift; sourceTree = "<group>"; };
+		49536BC32BFCE3DC0083CD04 /* MissileLaunchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissileLaunchViewController.xib; sourceTree = "<group>"; };
+		49536BC72BFCE4C80083CD04 /* missle-texture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "missle-texture.png"; sourceTree = "<group>"; };
+		49536BC82BFCE4C90083CD04 /* fire.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = fire.scnp; sourceTree = "<group>"; };
+		49536BC92BFCE4C90083CD04 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+		49536BCA2BFCE4C90083CD04 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		49536BCB2BFCE4C90083CD04 /* missile.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = missile.scn; sourceTree = "<group>"; };
+		49536BCD2BFCE4C90083CD04 /* smoke.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = smoke.scnp; sourceTree = "<group>"; };
+		49536BD52BFCE5290083CD04 /* Missile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Missile.swift; sourceTree = "<group>"; };
 		4958E3F52BED072E007F1757 /* ARKitThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4958E3F82BED072E007F1757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4958E3FA2BED072E007F1757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +134,29 @@
 			path = bench;
 			sourceTree = "<group>";
 		};
+		49536BC12BFCE3C50083CD04 /* MissileLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				49536BD52BFCE5290083CD04 /* Missile.swift */,
+				49536BC22BFCE3DC0083CD04 /* MissileLaunchViewController.swift */,
+				49536BC32BFCE3DC0083CD04 /* MissileLaunchViewController.xib */,
+			);
+			path = MissileLaunch;
+			sourceTree = "<group>";
+		};
+		49536BC62BFCE4B60083CD04 /* missile */ = {
+			isa = PBXGroup;
+			children = (
+				49536BC82BFCE4C90083CD04 /* fire.scnp */,
+				49536BCB2BFCE4C90083CD04 /* missile.scn */,
+				49536BC72BFCE4C80083CD04 /* missle-texture.png */,
+				49536BC92BFCE4C90083CD04 /* smoke.png */,
+				49536BCD2BFCE4C90083CD04 /* smoke.scnp */,
+				49536BCA2BFCE4C90083CD04 /* spark.png */,
+			);
+			path = missile;
+			sourceTree = "<group>";
+		};
 		4958E3EC2BED072E007F1757 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +211,7 @@
 				4958E40F2BED0771007F1757 /* HelloWorld */,
 				49536BB32BFCB9430083CD04 /* LoadingModels */,
 				4958E4122BED0771007F1757 /* Main */,
+				49536BC12BFCE3C50083CD04 /* MissileLaunch */,
 				49536BA22BFC80C50083CD04 /* OverlayingPlanes */,
 				49536BAB2BFC98790083CD04 /* PlacingVirtualObjects */,
 			);
@@ -179,6 +221,7 @@
 		4958E4192BED0923007F1757 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				49536BC62BFCE4B60083CD04 /* missile */,
 				49536BB82BFCBBFF0083CD04 /* bench */,
 				49536BA92BFC8A840083CD04 /* overlay_grid.png */,
 				4958E40C2BED0771007F1757 /* art.scnassets */,
@@ -245,19 +288,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49536BC52BFCE3DC0083CD04 /* MissileLaunchViewController.xib in Resources */,
+				49536BD12BFCE4C90083CD04 /* spark.png in Resources */,
+				49536BCF2BFCE4C90083CD04 /* fire.scnp in Resources */,
 				4958E4162BED0771007F1757 /* HelloWorldViewController.xib in Resources */,
 				4958E4022BED072F007F1757 /* Assets.xcassets in Resources */,
 				4958E4182BED0771007F1757 /* MainViewController.xib in Resources */,
+				49536BCE2BFCE4C90083CD04 /* missle-texture.png in Resources */,
 				4958E4142BED0771007F1757 /* art.scnassets in Resources */,
 				4958E4052BED072F007F1757 /* Base in Resources */,
+				49536BD22BFCE4C90083CD04 /* missile.scn in Resources */,
 				49536BBE2BFCBC1A0083CD04 /* _6.jpg in Resources */,
 				49536BAA2BFC8A840083CD04 /* overlay_grid.png in Resources */,
 				49536BAF2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.xib in Resources */,
+				49536BD02BFCE4C90083CD04 /* smoke.png in Resources */,
 				49536BB72BFCB9BC0083CD04 /* LoadingModelsViewController.xib in Resources */,
 				49536BBD2BFCBC1A0083CD04 /* tischholz.jpg in Resources */,
 				49536BA62BFC80FE0083CD04 /* OverlayingPlanesViewController.xib in Resources */,
 				49536BBF2BFCBC1A0083CD04 /* tischholz2.jpg in Resources */,
 				49536BC02BFCBC1A0083CD04 /* bench.dae in Resources */,
+				49536BD42BFCE4C90083CD04 /* smoke.scnp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +322,10 @@
 				49536BB22BFCA6840083CD04 /* BodyType.swift in Sources */,
 				49536BA82BFC88120083CD04 /* OverlayPlane.swift in Sources */,
 				4958E3F92BED072E007F1757 /* AppDelegate.swift in Sources */,
+				49536BD62BFCE5290083CD04 /* Missile.swift in Sources */,
 				49536BB62BFCB9BC0083CD04 /* LoadingModelsViewController.swift in Sources */,
 				49536BAE2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift in Sources */,
+				49536BC42BFCE3DC0083CD04 /* MissileLaunchViewController.swift in Sources */,
 				4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */,
 				4958E4152BED0771007F1757 /* HelloWorldViewController.swift in Sources */,
 				4958E4172BED0771007F1757 /* MainViewController.swift in Sources */,
