@@ -7,24 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		492D05652BE51D0600668245 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D05642BE51D0600668245 /* AppDelegate.swift */; };
-		492D05672BE51D0600668245 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 492D05662BE51D0600668245 /* art.scnassets */; };
-		492D05692BE51D0600668245 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D05682BE51D0600668245 /* ViewController.swift */; };
-		492D056C2BE51D0600668245 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 492D056B2BE51D0600668245 /* Base */; };
-		492D056E2BE51D0700668245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 492D056D2BE51D0700668245 /* Assets.xcassets */; };
+		4958E3F92BED072E007F1757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958E3F82BED072E007F1757 /* AppDelegate.swift */; };
+		4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958E3FA2BED072E007F1757 /* SceneDelegate.swift */; };
+		4958E4022BED072F007F1757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4958E4012BED072F007F1757 /* Assets.xcassets */; };
+		4958E4052BED072F007F1757 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4958E4042BED072F007F1757 /* Base */; };
+		4958E4142BED0771007F1757 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4958E40C2BED0771007F1757 /* art.scnassets */; };
+		4958E4152BED0771007F1757 /* HelloWorldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958E40D2BED0771007F1757 /* HelloWorldViewController.swift */; };
+		4958E4162BED0771007F1757 /* HelloWorldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4958E40E2BED0771007F1757 /* HelloWorldViewController.xib */; };
+		4958E4172BED0771007F1757 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958E4102BED0771007F1757 /* MainViewController.swift */; };
+		4958E4182BED0771007F1757 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4958E4112BED0771007F1757 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		492D05612BE51D0600668245 /* ARKitThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		492D05642BE51D0600668245 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		492D05662BE51D0600668245 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		492D05682BE51D0600668245 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		492D056B2BE51D0600668245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		492D056D2BE51D0700668245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4958E3F52BED072E007F1757 /* ARKitThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4958E3F82BED072E007F1757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4958E3FA2BED072E007F1757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4958E4012BED072F007F1757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4958E4042BED072F007F1757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4958E4062BED072F007F1757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4958E40C2BED0771007F1757 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		4958E40D2BED0771007F1757 /* HelloWorldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloWorldViewController.swift; sourceTree = "<group>"; };
+		4958E40E2BED0771007F1757 /* HelloWorldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloWorldViewController.xib; sourceTree = "<group>"; };
+		4958E4102BED0771007F1757 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		4958E4112BED0771007F1757 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		492D055E2BE51D0600668245 /* Frameworks */ = {
+		4958E3F22BED072E007F1757 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,52 +43,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		492D05582BE51D0600668245 = {
+		4958E3EC2BED072E007F1757 = {
 			isa = PBXGroup;
 			children = (
-				492D05632BE51D0600668245 /* ARKitThings */,
-				492D05622BE51D0600668245 /* Products */,
+				4958E3F72BED072E007F1757 /* ARKitThings */,
+				4958E3F62BED072E007F1757 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		492D05622BE51D0600668245 /* Products */ = {
+		4958E3F62BED072E007F1757 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				492D05612BE51D0600668245 /* ARKitThings.app */,
+				4958E3F52BED072E007F1757 /* ARKitThings.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		492D05632BE51D0600668245 /* ARKitThings */ = {
+		4958E3F72BED072E007F1757 /* ARKitThings */ = {
 			isa = PBXGroup;
 			children = (
-				492D05742BE51E9100668245 /* Scenes */,
-				492D05642BE51D0600668245 /* AppDelegate.swift */,
-				492D05662BE51D0600668245 /* art.scnassets */,
-				492D05682BE51D0600668245 /* ViewController.swift */,
-				492D056A2BE51D0600668245 /* Main.storyboard */,
-				492D056D2BE51D0700668245 /* Assets.xcassets */,
+				4958E4192BED0923007F1757 /* Assets */,
+				4958E4132BED0771007F1757 /* Scenes */,
+				4958E3F82BED072E007F1757 /* AppDelegate.swift */,
+				4958E3FA2BED072E007F1757 /* SceneDelegate.swift */,
+				4958E4032BED072F007F1757 /* LaunchScreen.storyboard */,
+				4958E4062BED072F007F1757 /* Info.plist */,
 			);
 			path = ARKitThings;
 			sourceTree = "<group>";
 		};
-		492D05742BE51E9100668245 /* Scenes */ = {
+		4958E40F2BED0771007F1757 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				4958E40D2BED0771007F1757 /* HelloWorldViewController.swift */,
+				4958E40E2BED0771007F1757 /* HelloWorldViewController.xib */,
+			);
+			path = HelloWorld;
+			sourceTree = "<group>";
+		};
+		4958E4122BED0771007F1757 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4958E4102BED0771007F1757 /* MainViewController.swift */,
+				4958E4112BED0771007F1757 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4958E4132BED0771007F1757 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4958E40F2BED0771007F1757 /* HelloWorld */,
+				4958E4122BED0771007F1757 /* Main */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4958E4192BED0923007F1757 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4958E40C2BED0771007F1757 /* art.scnassets */,
+				4958E4012BED072F007F1757 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		492D05602BE51D0600668245 /* ARKitThings */ = {
+		4958E3F42BED072E007F1757 /* ARKitThings */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 492D05712BE51D0700668245 /* Build configuration list for PBXNativeTarget "ARKitThings" */;
+			buildConfigurationList = 4958E4092BED072F007F1757 /* Build configuration list for PBXNativeTarget "ARKitThings" */;
 			buildPhases = (
-				492D055D2BE51D0600668245 /* Sources */,
-				492D055E2BE51D0600668245 /* Frameworks */,
-				492D055F2BE51D0600668245 /* Resources */,
+				4958E3F12BED072E007F1757 /* Sources */,
+				4958E3F22BED072E007F1757 /* Frameworks */,
+				4958E3F32BED072E007F1757 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,25 +125,25 @@
 			);
 			name = ARKitThings;
 			productName = ARKitThings;
-			productReference = 492D05612BE51D0600668245 /* ARKitThings.app */;
+			productReference = 4958E3F52BED072E007F1757 /* ARKitThings.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		492D05592BE51D0600668245 /* Project object */ = {
+		4958E3ED2BED072E007F1757 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					492D05602BE51D0600668245 = {
-						CreatedOnToolsVersion = 15.3;
+					4958E3F42BED072E007F1757 = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 492D055C2BE51D0600668245 /* Build configuration list for PBXProject "ARKitThings" */;
+			buildConfigurationList = 4958E3F02BED072E007F1757 /* Build configuration list for PBXProject "ARKitThings" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,54 +151,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 492D05582BE51D0600668245;
-			productRefGroup = 492D05622BE51D0600668245 /* Products */;
+			mainGroup = 4958E3EC2BED072E007F1757;
+			productRefGroup = 4958E3F62BED072E007F1757 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				492D05602BE51D0600668245 /* ARKitThings */,
+				4958E3F42BED072E007F1757 /* ARKitThings */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		492D055F2BE51D0600668245 /* Resources */ = {
+		4958E3F32BED072E007F1757 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492D05672BE51D0600668245 /* art.scnassets in Resources */,
-				492D056E2BE51D0700668245 /* Assets.xcassets in Resources */,
-				492D056C2BE51D0600668245 /* Base in Resources */,
+				4958E4162BED0771007F1757 /* HelloWorldViewController.xib in Resources */,
+				4958E4022BED072F007F1757 /* Assets.xcassets in Resources */,
+				4958E4182BED0771007F1757 /* MainViewController.xib in Resources */,
+				4958E4142BED0771007F1757 /* art.scnassets in Resources */,
+				4958E4052BED072F007F1757 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		492D055D2BE51D0600668245 /* Sources */ = {
+		4958E3F12BED072E007F1757 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				492D05692BE51D0600668245 /* ViewController.swift in Sources */,
-				492D05652BE51D0600668245 /* AppDelegate.swift in Sources */,
+				4958E3F92BED072E007F1757 /* AppDelegate.swift in Sources */,
+				4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */,
+				4958E4152BED0771007F1757 /* HelloWorldViewController.swift in Sources */,
+				4958E4172BED0771007F1757 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		492D056A2BE51D0600668245 /* Main.storyboard */ = {
+		4958E4032BED072F007F1757 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				492D056B2BE51D0600668245 /* Base */,
+				4958E4042BED072F007F1757 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		492D056F2BE51D0700668245 /* Debug */ = {
+		4958E4072BED072F007F1757 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -223,7 +265,7 @@
 			};
 			name = Debug;
 		};
-		492D05702BE51D0700668245 /* Release */ = {
+		4958E4082BED072F007F1757 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -279,7 +321,7 @@
 			};
 			name = Release;
 		};
-		492D05722BE51D0700668245 /* Debug */ = {
+		4958E40A2BED072F007F1757 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -288,13 +330,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F8FX9592B7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = ARKitThings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +349,7 @@
 			};
 			name = Debug;
 		};
-		492D05732BE51D0700668245 /* Release */ = {
+		4958E40B2BED072F007F1757 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -317,13 +358,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F8FX9592B7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_FILE = ARKitThings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,25 +380,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		492D055C2BE51D0600668245 /* Build configuration list for PBXProject "ARKitThings" */ = {
+		4958E3F02BED072E007F1757 /* Build configuration list for PBXProject "ARKitThings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				492D056F2BE51D0700668245 /* Debug */,
-				492D05702BE51D0700668245 /* Release */,
+				4958E4072BED072F007F1757 /* Debug */,
+				4958E4082BED072F007F1757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		492D05712BE51D0700668245 /* Build configuration list for PBXNativeTarget "ARKitThings" */ = {
+		4958E4092BED072F007F1757 /* Build configuration list for PBXNativeTarget "ARKitThings" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				492D05722BE51D0700668245 /* Debug */,
-				492D05732BE51D0700668245 /* Release */,
+				4958E40A2BED072F007F1757 /* Debug */,
+				4958E40B2BED072F007F1757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 492D05592BE51D0600668245 /* Project object */;
+	rootObject = 4958E3ED2BED072E007F1757 /* Project object */;
 }

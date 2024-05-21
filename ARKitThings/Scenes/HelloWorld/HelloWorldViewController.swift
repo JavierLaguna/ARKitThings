@@ -1,16 +1,9 @@
-//
-//  ViewController.swift
-//  ARKitThings
-//
-//  Created by Javier Laguna on 3/5/24.
-//
-
 import UIKit
 import SceneKit
 import ARKit
 
-final class ViewController: UIViewController, ARSCNViewDelegate {
-
+final class HelloWorldViewController: UIViewController, ARSCNViewDelegate {
+    
     @IBOutlet private var sceneView: ARSCNView!
     
     override func viewDidLoad() {
@@ -34,7 +27,7 @@ final class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-
+        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -45,17 +38,17 @@ final class ViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
-
+    
     // MARK: - ARSCNViewDelegate
     
-/*
-    // Override to create and configure nodes for anchors added to the view's session.
-    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        let node = SCNNode()
+    /*
+     // Override to create and configure nodes for anchors added to the view's session.
+     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+     let node = SCNNode()
      
-        return node
-    }
-*/
+     return node
+     }
+     */
     
     func session(_ session: ARSession, didFailWithError error: Error) {
         // Present an error message to the user
