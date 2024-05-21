@@ -2,11 +2,13 @@ import ARKit
 
 final class OverlayPlane: SCNNode {
     
-    var anchor: ARPlaneAnchor
+    private(set) var anchor: ARPlaneAnchor
+    private let collisions: Bool
     var planeGeometry: SCNPlane!
     
-    init(anchor: ARPlaneAnchor) {
+    init(anchor: ARPlaneAnchor, collisions: Bool = false) {
         self.anchor = anchor
+        self.collisions = collisions
         
         super.init()
         
@@ -29,6 +31,18 @@ final class OverlayPlane: SCNNode {
         planeGeometry.materials = [material]
         
         let planeNode = SCNNode(geometry: planeGeometry)
+        
+        if collisions {
+            planeNode.physicsBody = SCNPhysicsBody(
+                type: .static,
+                shape: SCNPhysicsShape(
+                    geometry: planeGeometry,
+                    options: nil
+                )
+            )
+            planeNode.physicsBody?.categoryBitMask = BodyType.plane.rawValue
+        }
+        
         planeNode.position = SCNVector3Make(
             anchor.center.x,
             0,
@@ -52,5 +66,17 @@ final class OverlayPlane: SCNNode {
             0,
             anchor.center.z
         )
+        
+        if collisions, let planeNode = childNodes.first {
+            
+            planeNode.physicsBody = SCNPhysicsBody(
+                type: .static,
+                shape: SCNPhysicsShape(
+                    geometry: planeGeometry,
+                    options: nil
+                )
+            )
+            
+        }
     }
 }

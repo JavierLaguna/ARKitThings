@@ -13,6 +13,7 @@
 		49536BAA2BFC8A840083CD04 /* overlay_grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 49536BA92BFC8A840083CD04 /* overlay_grid.png */; };
 		49536BAE2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49536BAC2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift */; };
 		49536BAF2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49536BAD2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.xib */; };
+		49536BB22BFCA6840083CD04 /* BodyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49536BB12BFCA6840083CD04 /* BodyType.swift */; };
 		4958E3F92BED072E007F1757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958E3F82BED072E007F1757 /* AppDelegate.swift */; };
 		4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958E3FA2BED072E007F1757 /* SceneDelegate.swift */; };
 		4958E4022BED072F007F1757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4958E4012BED072F007F1757 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		49536BA92BFC8A840083CD04 /* overlay_grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay_grid.png; sourceTree = "<group>"; };
 		49536BAC2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacingVirtualObjectsViewController.swift; sourceTree = "<group>"; };
 		49536BAD2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacingVirtualObjectsViewController.xib; sourceTree = "<group>"; };
+		49536BB12BFCA6840083CD04 /* BodyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyType.swift; sourceTree = "<group>"; };
 		4958E3F52BED072E007F1757 /* ARKitThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4958E3F82BED072E007F1757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4958E3FA2BED072E007F1757 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,10 +60,8 @@
 		49536BA22BFC80C50083CD04 /* OverlayingPlanes */ = {
 			isa = PBXGroup;
 			children = (
-				49536BA92BFC8A840083CD04 /* overlay_grid.png */,
 				49536BA32BFC80FE0083CD04 /* OverlayingPlanesViewController.swift */,
 				49536BA42BFC80FE0083CD04 /* OverlayingPlanesViewController.xib */,
-				49536BA72BFC88120083CD04 /* OverlayPlane.swift */,
 			);
 			path = OverlayingPlanes;
 			sourceTree = "<group>";
@@ -73,6 +73,15 @@
 				49536BAD2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.xib */,
 			);
 			path = PlacingVirtualObjects;
+			sourceTree = "<group>";
+		};
+		49536BB02BFCA5A90083CD04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49536BB12BFCA6840083CD04 /* BodyType.swift */,
+				49536BA72BFC88120083CD04 /* OverlayPlane.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4958E3EC2BED072E007F1757 = {
@@ -95,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				4958E4192BED0923007F1757 /* Assets */,
+				49536BB02BFCA5A90083CD04 /* Models */,
 				4958E4132BED0771007F1757 /* Scenes */,
 				4958E3F82BED072E007F1757 /* AppDelegate.swift */,
 				4958E3FA2BED072E007F1757 /* SceneDelegate.swift */,
@@ -125,10 +135,10 @@
 		4958E4132BED0771007F1757 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				49536BAB2BFC98790083CD04 /* PlacingVirtualObjects */,
-				49536BA22BFC80C50083CD04 /* OverlayingPlanes */,
 				4958E40F2BED0771007F1757 /* HelloWorld */,
 				4958E4122BED0771007F1757 /* Main */,
+				49536BA22BFC80C50083CD04 /* OverlayingPlanes */,
+				49536BAB2BFC98790083CD04 /* PlacingVirtualObjects */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -136,6 +146,7 @@
 		4958E4192BED0923007F1757 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				49536BA92BFC8A840083CD04 /* overlay_grid.png */,
 				4958E40C2BED0771007F1757 /* art.scnassets */,
 				4958E4012BED072F007F1757 /* Assets.xcassets */,
 			);
@@ -219,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49536BA52BFC80FE0083CD04 /* OverlayingPlanesViewController.swift in Sources */,
+				49536BB22BFCA6840083CD04 /* BodyType.swift in Sources */,
 				49536BA82BFC88120083CD04 /* OverlayPlane.swift in Sources */,
 				4958E3F92BED072E007F1757 /* AppDelegate.swift in Sources */,
 				49536BAE2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift in Sources */,

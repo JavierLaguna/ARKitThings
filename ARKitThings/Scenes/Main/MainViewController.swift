@@ -9,6 +9,7 @@ final class MainViewController: UIViewController {
         ("Overlaying Planes", OverlayingPlanesViewController()),
         ("Enabling Virtual Objects", PlacingVirtualObjectsViewController()),
         ("Enabling Physics", PlacingVirtualObjectsViewController(physics: true)),
+        ("Enabling Physics Collisions", PlacingVirtualObjectsViewController(physics: true, collisions: true)),
     ]
     
     override func viewDidLoad() {

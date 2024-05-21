@@ -7,16 +7,19 @@ final class PlacingVirtualObjectsViewController: UIViewController {
     @IBOutlet private weak var sceneView: ARSCNView!
     
     private let physics: Bool
+    private let collisions: Bool
     private var planes: [OverlayPlane] = []
     
-    init(physics: Bool = false) {
+    init(physics: Bool = false, collisions: Bool = false) {
         self.physics = physics
+        self.collisions = collisions
         
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.physics = false
+        physics = false
+        collisions = false
         
         super.init(coder: aDecoder)
     }
@@ -54,7 +57,7 @@ extension PlacingVirtualObjectsViewController: ARSCNViewDelegate {
             return
         }
         
-        let plane = OverlayPlane(anchor: planeAnchor)
+        let plane = OverlayPlane(anchor: planeAnchor, collisions: collisions)
         planes.append(plane)
         node.addChildNode(plane)
     }
@@ -118,6 +121,11 @@ private extension PlacingVirtualObjectsViewController {
         
         if physics {
             boxNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
+            
+            if collisions {
+                boxNode.physicsBody?.categoryBitMask = BodyType.box.rawValue
+            }
+            
             boxNode.position = SCNVector3(
                 hitResult.worldTransform.columns.3.x,
                 hitResult.worldTransform.columns.3.y + 0.5,
