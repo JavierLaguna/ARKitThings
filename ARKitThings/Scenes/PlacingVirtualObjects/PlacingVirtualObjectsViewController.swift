@@ -6,7 +6,20 @@ final class PlacingVirtualObjectsViewController: UIViewController {
 
     @IBOutlet private weak var sceneView: ARSCNView!
     
+    private let physics: Bool
     private var planes: [OverlayPlane] = []
+    
+    init(physics: Bool = false) {
+        self.physics = physics
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.physics = false
+        
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,18 +108,30 @@ private extension PlacingVirtualObjectsViewController {
             width: 0.2,
             height: 0.2,
             length: 0.1,
-            chamferRadius: 0.2
+            chamferRadius: physics ? 0.0 : 0.2
         )
         let material = SCNMaterial()
         material.diffuse.contents = UIColor.red
         boxGeometry.materials = [material]
         
         let boxNode = SCNNode(geometry: boxGeometry)
-        boxNode.position = SCNVector3(
-            hitResult.worldTransform.columns.3.x,
-            hitResult.worldTransform.columns.3.y + Float(boxGeometry.height / 2),
-            hitResult.worldTransform.columns.3.z
-        )
+        
+        if physics {
+            boxNode.physicsBody = SCNPhysicsBody(type: .dynamic, shape: nil)
+            boxNode.position = SCNVector3(
+                hitResult.worldTransform.columns.3.x,
+                hitResult.worldTransform.columns.3.y + 0.5,
+                hitResult.worldTransform.columns.3.z
+            )
+            
+        } else {
+            boxNode.position = SCNVector3(
+                hitResult.worldTransform.columns.3.x,
+                hitResult.worldTransform.columns.3.y + Float(boxGeometry.height / 2),
+                hitResult.worldTransform.columns.3.z
+            )
+        }
+        
         sceneView.scene.rootNode.addChildNode(boxNode)
     }
 }

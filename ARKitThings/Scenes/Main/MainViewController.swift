@@ -7,7 +7,8 @@ final class MainViewController: UIViewController {
     private let scenes: [(String, UIViewController)] = [
         ("Hello World", HelloWorldViewController()),
         ("Overlaying Planes", OverlayingPlanesViewController()),
-        ("Placing Virtual Objects", PlacingVirtualObjectsViewController()),
+        ("Enabling Virtual Objects", PlacingVirtualObjectsViewController()),
+        ("Enabling Physics", PlacingVirtualObjectsViewController(physics: true)),
     ]
     
     override func viewDidLoad() {
