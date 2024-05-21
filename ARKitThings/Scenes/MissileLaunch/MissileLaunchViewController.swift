@@ -4,6 +4,8 @@ import ARKit
 
 final class MissileLaunchViewController: UIViewController, ARSCNViewDelegate {
     
+    static private let missileName = "Missile"
+    
     @IBOutlet private var sceneView: ARSCNView!
     
     override func viewDidLoad() {
@@ -13,7 +15,7 @@ final class MissileLaunchViewController: UIViewController, ARSCNViewDelegate {
         sceneView.delegate = self
         
         let missile = Missile()
-        missile.name = "Missile"
+        missile.name = Self.missileName
         missile.position = SCNVector3(0, 0, -4)
         
         let scene = SCNScene()
@@ -57,24 +59,12 @@ private extension MissileLaunchViewController {
     }
     
     @objc func tapped(recognizer :UITapGestureRecognizer) {
-        guard let missileNode = sceneView.scene.rootNode.childNode(withName: "Missile", recursively: true)
+        guard let missileNode = sceneView.scene.rootNode.childNode(withName: Self.missileName, recursively: true)
             else {
                 fatalError("Missile not found")
         }
         
-        guard let smokeNode = missileNode.childNode(withName: "smokeNode", recursively: true) else {
-            fatalError("no smoke node found")
-        }
-        
-        smokeNode.removeAllParticleSystems()
-        
-        if let fire = SCNParticleSystem(
-            named: "fire.scnp",
-            inDirectory: nil
-        ) {
-            smokeNode.addParticleSystem(fire)
-        }
-        
+        (missileNode as? Missile)?.showFireEffect()
         missileNode.physicsBody = SCNPhysicsBody(
             type: .dynamic,
             shape: nil
