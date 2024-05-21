@@ -38,6 +38,10 @@ final class MainViewController: UIViewController {
                 forces: true
             )
         ),
+        (
+            "Loading Models",
+            LoadingModelsViewController()
+        ),
     ]
     
     override func viewDidLoad() {
