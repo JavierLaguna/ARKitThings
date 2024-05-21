@@ -5,11 +5,39 @@ final class MainViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     
     private let scenes: [(String, UIViewController)] = [
-        ("Hello World", HelloWorldViewController()),
-        ("Overlaying Planes", OverlayingPlanesViewController()),
-        ("Enabling Virtual Objects", PlacingVirtualObjectsViewController()),
-        ("Enabling Physics", PlacingVirtualObjectsViewController(physics: true)),
-        ("Enabling Physics Collisions", PlacingVirtualObjectsViewController(physics: true, collisions: true)),
+        (
+            "Hello World",
+            HelloWorldViewController()
+        ),
+        (
+            "Overlaying Planes",
+            OverlayingPlanesViewController()
+        ),
+        (
+            "Enabling Virtual Objects",
+            PlacingVirtualObjectsViewController()
+        ),
+        (
+            "Enabling Physics",
+            PlacingVirtualObjectsViewController(
+                physics: true
+            )
+        ),
+        (
+            "Enabling Physics Collisions",
+            PlacingVirtualObjectsViewController(
+                physics: true,
+                collisions: true
+            )
+        ),
+        (
+            "Applying Forces (Double tap)",
+            PlacingVirtualObjectsViewController(
+                physics: true,
+                collisions: true,
+                forces: true
+            )
+        ),
     ]
     
     override func viewDidLoad() {

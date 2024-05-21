@@ -8,11 +8,17 @@ final class PlacingVirtualObjectsViewController: UIViewController {
     
     private let physics: Bool
     private let collisions: Bool
+    private let forces: Bool
     private var planes: [OverlayPlane] = []
     
-    init(physics: Bool = false, collisions: Bool = false) {
+    init(
+        physics: Bool = false,
+        collisions: Bool = false,
+        forces: Bool = false
+    ) {
         self.physics = physics
         self.collisions = collisions
+        self.forces = forces
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -20,6 +26,7 @@ final class PlacingVirtualObjectsViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         physics = false
         collisions = false
+        forces = false
         
         super.init(coder: aDecoder)
     }
@@ -29,7 +36,7 @@ final class PlacingVirtualObjectsViewController: UIViewController {
         
         showDebugOptions()
         sceneView.delegate = self
-        registerGesture()
+        registerGestures()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -88,9 +95,16 @@ private extension PlacingVirtualObjectsViewController {
         #endif
     }
     
-    func registerGesture() {
+    func registerGestures() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapped))
         sceneView.addGestureRecognizer(tapGesture)
+        
+        if forces {
+            let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
+            doubleTapGesture.numberOfTapsRequired = 2
+            tapGesture.require(toFail: doubleTapGesture)
+            sceneView.addGestureRecognizer(doubleTapGesture)
+        }
     }
     
     @objc func tapped(recognizer: UIGestureRecognizer) {
@@ -103,6 +117,27 @@ private extension PlacingVirtualObjectsViewController {
         
         if let hitResult = hitTestResult.first {
             addBox(hitResult: hitResult)
+        }
+    }
+    
+    @objc func doubleTapped(recognizer: UIGestureRecognizer) {
+        guard let sceneView = recognizer.view as? ARSCNView else {
+            return
+        }
+        
+        let touchLocation = recognizer.location(in: sceneView)
+        let hitTestResult = sceneView.hitTest(touchLocation, options: [:])
+        
+        if let hitResult = hitTestResult.first {
+            let node = hitResult.node
+            node.physicsBody?.applyForce(
+                SCNVector3(
+                    hitResult.worldCoordinates.x * 2.0,
+                    2.0,
+                    hitResult.worldCoordinates.z * 2.0
+                ),
+                asImpulse: true
+            )
         }
     }
     
