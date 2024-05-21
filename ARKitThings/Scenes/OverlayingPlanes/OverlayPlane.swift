@@ -19,8 +19,8 @@ final class OverlayPlane: SCNNode {
     
     private func setup() {
         planeGeometry = SCNPlane(
-            width: CGFloat(anchor.extent.x),
-            height: CGFloat(anchor.extent.z)
+            width: CGFloat(anchor.planeExtent.width),
+            height: CGFloat(anchor.planeExtent.height)
         )
         
         let material = SCNMaterial()
@@ -45,8 +45,8 @@ final class OverlayPlane: SCNNode {
     }
     
     func update(anchor: ARPlaneAnchor) {
-        planeGeometry.width = CGFloat(anchor.extent.x)
-        planeGeometry.height = CGFloat(anchor.extent.z)
+        planeGeometry.width = CGFloat(anchor.planeExtent.width)
+        planeGeometry.height = CGFloat(anchor.planeExtent.height)
         position = SCNVector3Make(
             anchor.center.x,
             0,
