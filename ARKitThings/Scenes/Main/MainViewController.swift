@@ -46,6 +46,10 @@ final class MainViewController: UIViewController {
             "Missile Launch",
             MissileLaunchViewController()
         ),
+        (
+            "Collada (DAE) Models",
+            ColladaSceneViewController()
+        )
     ]
     
     override func viewDidLoad() {
