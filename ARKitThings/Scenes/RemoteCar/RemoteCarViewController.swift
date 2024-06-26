@@ -5,9 +5,13 @@ import ARKit
 final class RemoteCarViewController: UIViewController {
     
     @IBOutlet private weak var sceneView: ARSCNView!
+    @IBOutlet private weak var leftButton: GameButton!
+    @IBOutlet private weak var rightButton: GameButton!
+    @IBOutlet private weak var upButton: GameButton!
     
     private var planes: [OverlayPlane] = []
     private var car: Car!
+    private var carNode: SCNNode?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,12 +20,9 @@ final class RemoteCarViewController: UIViewController {
         sceneView.delegate = self
                 
         let carScene = SCNScene(named: "car.dae")
-        guard let carNode = carScene?.rootNode.childNode(withName: "car", recursively: true) else {
-            return
-        }
+        carNode = carScene?.rootNode.childNode(withName: "car", recursively: true)
+        carNode?.scale = SCNVector3(0.3, 0.3, 0.3)
         
-        car = Car(node: carNode)
-                    
         setupControlPad()
         registerGestureRecognizers()
     }
@@ -83,41 +84,17 @@ private extension RemoteCarViewController {
     }
     
     func setupControlPad() {
-        let leftButton = GameButton(frame: CGRect(
-            x: 0,
-            y: self.sceneView.frame.height - 140,
-            width: 50,
-            height: 50
-        )) { [weak self] in
+        leftButton.onPress { [weak self] in
             self?.car.turnLeft()
         }
-        leftButton.setTitle("Left", for: .normal)
         
-        let rightButton = GameButton(frame: CGRect(
-            x: 60,
-            y: self.sceneView.frame.height - 140,
-            width: 50,
-            height: 50
-        )) { [weak self] in
+        rightButton.onPress { [weak self] in
             self?.car.turnRight()
         }
-        rightButton.setTitle("Right", for: .normal)
         
-        let acceleratorButton = GameButton(frame: CGRect(
-            x: 120,
-            y: self.sceneView.frame.height - 140,
-            width: 60,
-            height: 20
-        )) { [weak self] in
+        upButton.onPress { [weak self] in
             self?.car.accelerate()
         }
-        acceleratorButton.backgroundColor = UIColor.red
-        acceleratorButton.layer.cornerRadius = 10.0
-        acceleratorButton.layer.masksToBounds = true
-        
-        sceneView.addSubview(leftButton)
-        sceneView.addSubview(rightButton)
-        sceneView.addSubview(acceleratorButton)
     }
     
     func registerGestureRecognizers() {
@@ -131,10 +108,12 @@ private extension RemoteCarViewController {
         
         let hitTestResult = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
         
-        guard let hitResult = hitTestResult.first else {
+        guard let hitResult = hitTestResult.first,
+            let carNode else {
             return
         }
         
+        car = Car(node: carNode)
         car.position = SCNVector3(hitResult.worldTransform.columns.3.x,hitResult.worldTransform.columns.3.y + 0.1, hitResult.worldTransform.columns.3.z)
         
         sceneView.scene.rootNode.addChildNode(car)

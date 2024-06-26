@@ -4,13 +4,15 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RemoteCarViewController" customModule="ARKitThings" customModuleProvider="target">
             <connections>
+                <outlet property="leftButton" destination="5fu-Q4-kIC" id="8we-gX-Fke"/>
+                <outlet property="rightButton" destination="1b9-DB-Hof" id="TTW-TV-dMZ"/>
                 <outlet property="sceneView" destination="wqG-LF-Kmz" id="m4X-wI-zQZ"/>
+                <outlet property="upButton" destination="KtS-7n-6kd" id="txG-1L-Aen"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,23 +22,45 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wqG-LF-Kmz">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="748"/>
                 </arscnView>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8k8-YQ-S9D">
+                    <rect key="frame" x="0.0" y="748" width="393" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fu-Q4-kIC" userLabel="LeftButton" customClass="GameButton" customModule="ARKitThings" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="131" height="70"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="◀️"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1b9-DB-Hof" userLabel="RightButton" customClass="GameButton" customModule="ARKitThings" customModuleProvider="target">
+                            <rect key="frame" x="131" y="0.0" width="131" height="70"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="▶️"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtS-7n-6kd" userLabel="UpButton" customClass="GameButton" customModule="ARKitThings" customModuleProvider="target">
+                            <rect key="frame" x="262" y="0.0" width="131" height="70"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="⬆️"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="NQj-6I-zbb"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.25119579081632654" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="wqG-LF-Kmz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4J7-C2-XjP"/>
-                <constraint firstAttribute="bottom" secondItem="wqG-LF-Kmz" secondAttribute="bottom" id="8Nx-dc-vx3"/>
+                <constraint firstItem="8k8-YQ-S9D" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="P7k-do-aXH"/>
+                <constraint firstItem="8k8-YQ-S9D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ps5-SP-g6e"/>
+                <constraint firstItem="8k8-YQ-S9D" firstAttribute="top" secondItem="wqG-LF-Kmz" secondAttribute="bottom" id="YBi-De-yD9"/>
                 <constraint firstItem="wqG-LF-Kmz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ZoN-kA-lvQ"/>
                 <constraint firstAttribute="trailing" secondItem="wqG-LF-Kmz" secondAttribute="trailing" id="lUw-NK-0K1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8k8-YQ-S9D" secondAttribute="trailing" id="xp5-as-c7l"/>
             </constraints>
             <point key="canvasLocation" x="-43.511450381679388" y="19.718309859154932"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

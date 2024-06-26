@@ -3,7 +3,7 @@ import UIKit
 
 final class GameButton: UIButton {
     
-    private var callback: () -> ()
+    private var callback: (() -> Void)?
     private var timer: Timer!
     
     init(frame: CGRect, callback: @escaping () -> ()) {
@@ -13,17 +13,21 @@ final class GameButton: UIButton {
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true, block: { [weak self] (timer :Timer) in
-            self?.callback()
+            self?.callback?()
         })
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         timer.invalidate()
+    }
+    
+    func onPress(callback: @escaping () -> ()) {
+        self.callback = callback
     }
 }
