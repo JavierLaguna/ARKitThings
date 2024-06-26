@@ -58,25 +58,20 @@ private extension CoreMLSceneViewController {
     
     @objc func tapped(recognizer :UIGestureRecognizer) {
         let sceneView = recognizer.view as! ARSCNView
-        let touchLocation = self.sceneView.center
-        
         guard let currentFrame = sceneView.session.currentFrame else {
             return
         }
         
+        let touchLocation = self.sceneView.center
         let hitTestResults = sceneView.hitTest(touchLocation, types: .featurePoint)
         
-        if hitTestResults.isEmpty {
-            return
-        }
-        print(hitTestResults.count)
         guard let hitTestResult = hitTestResults.first else {
             return
         }
         
         self.hitTestResult = hitTestResult
-        let pixelBuffer = currentFrame.capturedImage
         
+        let pixelBuffer = currentFrame.capturedImage
         performVisionRequest(pixelBuffer: pixelBuffer)
     }
     
@@ -90,12 +85,12 @@ private extension CoreMLSceneViewController {
         let sphereNode = SCNNode(geometry: sphere)
         
         let textGeometry = SCNText(string: text, extrusionDepth: 0)
-//        textGeometry.alignmentMode = kCAAlignmentCenter
+        textGeometry.alignmentMode = CATextLayerAlignmentMode.center.rawValue
         textGeometry.firstMaterial?.diffuse.contents = UIColor.orange
         textGeometry.firstMaterial?.specular.contents = UIColor.white
         textGeometry.firstMaterial?.isDoubleSided = true
         
-        var font = UIFont(name: "Futura", size: 0.15)
+        let font = UIFont(name: "Futura", size: 0.15)
         textGeometry.font = font
         
         let textNode = SCNNode(geometry: textGeometry)
@@ -107,16 +102,12 @@ private extension CoreMLSceneViewController {
     }
     
     func performVisionRequest(pixelBuffer :CVPixelBuffer) {
-        
         let visionModel = try! VNCoreMLModel(for: self.resnetModel.model)
         
         let request = VNCoreMLRequest(model: visionModel) { request, error in
             
-            if error != nil {
-                return
-            }
-            
-            guard let observations = request.results else {
+            guard error == nil,
+                  let observations = request.results else {
                 return
             }
             
@@ -124,10 +115,9 @@ private extension CoreMLSceneViewController {
             
             print("Name \(observation.identifier) and confidence is \(observation.confidence)")
             
-            DispatchQueue.main.async {
-                self.displayPredictions(text: observation.identifier)
+            DispatchQueue.main.async { [weak self] in
+                self?.displayPredictions(text: observation.identifier)
             }
-            
         }
         
         request.imageCropAndScaleOption = .centerCrop
@@ -135,10 +125,10 @@ private extension CoreMLSceneViewController {
         
         let imageRequestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: .upMirrored, options: [:])
         
-        DispatchQueue.global().async {
-            try! imageRequestHandler.perform(self.visionRequests)
+        DispatchQueue.global().async { [weak self] in
+            guard let visionRequests = self?.visionRequests else { return }
+            try! imageRequestHandler.perform(visionRequests)
         }
-        
     }
     
     func displayPredictions(text :String) {
