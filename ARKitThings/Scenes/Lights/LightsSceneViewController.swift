@@ -165,27 +165,6 @@ private extension LightsSceneViewController {
         }
     }
     
-    @objc func doubleTapped(recognizer: UIGestureRecognizer) {
-        guard let sceneView = recognizer.view as? ARSCNView else {
-            return
-        }
-        
-        let touchLocation = recognizer.location(in: sceneView)
-        let hitTestResult = sceneView.hitTest(touchLocation, options: [:])
-        
-        if let hitResult = hitTestResult.first {
-            let node = hitResult.node
-            node.physicsBody?.applyForce(
-                SCNVector3(
-                    hitResult.worldCoordinates.x * 2.0,
-                    2.0,
-                    hitResult.worldCoordinates.z * 2.0
-                ),
-                asImpulse: true
-            )
-        }
-    }
-    
     func addBox(hitResult: ARHitTestResult) {
         let boxGeometry = SCNBox(
             width: 0.2,

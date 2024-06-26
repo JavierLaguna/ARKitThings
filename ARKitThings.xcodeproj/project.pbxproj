@@ -43,6 +43,11 @@
 		496403D72C2B1D1C00DAA410 /* farm.dae in Resources */ = {isa = PBXBuildFile; fileRef = 496403D62C2B1D1C00DAA410 /* farm.dae */; };
 		496403DB2C2BEF7B00DAA410 /* LightsSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496403DA2C2BEF7B00DAA410 /* LightsSceneViewController.xib */; };
 		496403DC2C2BEF7B00DAA410 /* LightsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403D92C2BEF7B00DAA410 /* LightsSceneViewController.swift */; };
+		496403DE2C2C02CC00DAA410 /* car.dae in Resources */ = {isa = PBXBuildFile; fileRef = 496403DD2C2C02CC00DAA410 /* car.dae */; };
+		496403E22C2C032E00DAA410 /* RemoteCarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496403E12C2C032E00DAA410 /* RemoteCarViewController.xib */; };
+		496403E32C2C032E00DAA410 /* RemoteCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403E02C2C032E00DAA410 /* RemoteCarViewController.swift */; };
+		496403E52C2C0BAA00DAA410 /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403E42C2C0BAA00DAA410 /* GameButton.swift */; };
+		496403E72C2C0F2000DAA410 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403E62C2C0F2000DAA410 /* Car.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +89,11 @@
 		496403D62C2B1D1C00DAA410 /* farm.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = farm.dae; sourceTree = "<group>"; };
 		496403D92C2BEF7B00DAA410 /* LightsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightsSceneViewController.swift; sourceTree = "<group>"; };
 		496403DA2C2BEF7B00DAA410 /* LightsSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightsSceneViewController.xib; sourceTree = "<group>"; };
+		496403DD2C2C02CC00DAA410 /* car.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = car.dae; sourceTree = "<group>"; };
+		496403E02C2C032E00DAA410 /* RemoteCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCarViewController.swift; sourceTree = "<group>"; };
+		496403E12C2C032E00DAA410 /* RemoteCarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemoteCarViewController.xib; sourceTree = "<group>"; };
+		496403E42C2C0BAA00DAA410 /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
+		496403E62C2C0F2000DAA410 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +236,7 @@
 				49536BC12BFCE3C50083CD04 /* MissileLaunch */,
 				49536BA22BFC80C50083CD04 /* OverlayingPlanes */,
 				49536BAB2BFC98790083CD04 /* PlacingVirtualObjects */,
+				496403DF2C2C031400DAA410 /* RemoteCar */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -233,6 +244,7 @@
 		4958E4192BED0923007F1757 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				496403DD2C2C02CC00DAA410 /* car.dae */,
 				496403D62C2B1D1C00DAA410 /* farm.dae */,
 				49536BC62BFCE4B60083CD04 /* missile */,
 				49536BB82BFCBBFF0083CD04 /* bench */,
@@ -259,6 +271,17 @@
 				496403DA2C2BEF7B00DAA410 /* LightsSceneViewController.xib */,
 			);
 			path = Lights;
+			sourceTree = "<group>";
+		};
+		496403DF2C2C031400DAA410 /* RemoteCar */ = {
+			isa = PBXGroup;
+			children = (
+				496403E62C2C0F2000DAA410 /* Car.swift */,
+				496403E42C2C0BAA00DAA410 /* GameButton.swift */,
+				496403E02C2C032E00DAA410 /* RemoteCarViewController.swift */,
+				496403E12C2C032E00DAA410 /* RemoteCarViewController.xib */,
+			);
+			path = RemoteCar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +355,7 @@
 				4958E4052BED072F007F1757 /* Base in Resources */,
 				49536BD22BFCE4C90083CD04 /* missile.scn in Resources */,
 				49536BBE2BFCBC1A0083CD04 /* _6.jpg in Resources */,
+				496403E22C2C032E00DAA410 /* RemoteCarViewController.xib in Resources */,
 				49536BAA2BFC8A840083CD04 /* overlay_grid.png in Resources */,
 				49536BAF2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.xib in Resources */,
 				496403D42C2B1C9100DAA410 /* ColladaSceneViewController.xib in Resources */,
@@ -340,6 +364,7 @@
 				49536BBD2BFCBC1A0083CD04 /* tischholz.jpg in Resources */,
 				49536BA62BFC80FE0083CD04 /* OverlayingPlanesViewController.xib in Resources */,
 				49536BBF2BFCBC1A0083CD04 /* tischholz2.jpg in Resources */,
+				496403DE2C2C02CC00DAA410 /* car.dae in Resources */,
 				49536BC02BFCBC1A0083CD04 /* bench.dae in Resources */,
 				49536BD42BFCE4C90083CD04 /* smoke.scnp in Resources */,
 			);
@@ -356,10 +381,13 @@
 				49536BB22BFCA6840083CD04 /* BodyType.swift in Sources */,
 				49536BA82BFC88120083CD04 /* OverlayPlane.swift in Sources */,
 				4958E3F92BED072E007F1757 /* AppDelegate.swift in Sources */,
+				496403E52C2C0BAA00DAA410 /* GameButton.swift in Sources */,
 				49536BD62BFCE5290083CD04 /* Missile.swift in Sources */,
 				49536BB62BFCB9BC0083CD04 /* LoadingModelsViewController.swift in Sources */,
 				49536BAE2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift in Sources */,
+				496403E32C2C032E00DAA410 /* RemoteCarViewController.swift in Sources */,
 				49536BC42BFCE3DC0083CD04 /* MissileLaunchViewController.swift in Sources */,
+				496403E72C2C0F2000DAA410 /* Car.swift in Sources */,
 				496403D52C2B1C9100DAA410 /* ColladaSceneViewController.swift in Sources */,
 				4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */,
 				4958E4152BED0771007F1757 /* HelloWorldViewController.swift in Sources */,

@@ -62,6 +62,10 @@ final class MainViewController: UIViewController {
             "Lights - Estimated Room Light",
             LightsSceneViewController(mode: .spotLightWithRoomLightEstimation)
         ),
+        (
+            "Remote car",
+            RemoteCarViewController()
+        ),
     ]
     
     override func viewDidLoad() {
