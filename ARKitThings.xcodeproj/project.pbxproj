@@ -48,6 +48,9 @@
 		496403E32C2C032E00DAA410 /* RemoteCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403E02C2C032E00DAA410 /* RemoteCarViewController.swift */; };
 		496403E52C2C0BAA00DAA410 /* GameButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403E42C2C0BAA00DAA410 /* GameButton.swift */; };
 		496403E72C2C0F2000DAA410 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403E62C2C0F2000DAA410 /* Car.swift */; };
+		496403EB2C2C247800DAA410 /* CoreMLSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496403EA2C2C247800DAA410 /* CoreMLSceneViewController.xib */; };
+		496403EC2C2C247800DAA410 /* CoreMLSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403E92C2C247800DAA410 /* CoreMLSceneViewController.swift */; };
+		496403F02C2C28BF00DAA410 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 496403EF2C2C28BF00DAA410 /* Resnet50.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +97,9 @@
 		496403E12C2C032E00DAA410 /* RemoteCarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemoteCarViewController.xib; sourceTree = "<group>"; };
 		496403E42C2C0BAA00DAA410 /* GameButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButton.swift; sourceTree = "<group>"; };
 		496403E62C2C0F2000DAA410 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		496403E92C2C247800DAA410 /* CoreMLSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLSceneViewController.swift; sourceTree = "<group>"; };
+		496403EA2C2C247800DAA410 /* CoreMLSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreMLSceneViewController.xib; sourceTree = "<group>"; };
+		496403EF2C2C28BF00DAA410 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +234,7 @@
 		4958E4132BED0771007F1757 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				496403E82C2C245600DAA410 /* CoreML */,
 				496403D12C2B1C6F00DAA410 /* ColladaScene */,
 				4958E40F2BED0771007F1757 /* HelloWorld */,
 				496403D82C2BEF3900DAA410 /* Lights */,
@@ -282,6 +289,16 @@
 				496403E12C2C032E00DAA410 /* RemoteCarViewController.xib */,
 			);
 			path = RemoteCar;
+			sourceTree = "<group>";
+		};
+		496403E82C2C245600DAA410 /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				496403EF2C2C28BF00DAA410 /* Resnet50.mlmodel */,
+				496403E92C2C247800DAA410 /* CoreMLSceneViewController.swift */,
+				496403EA2C2C247800DAA410 /* CoreMLSceneViewController.xib */,
+			);
+			path = CoreML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +370,7 @@
 				49536BCE2BFCE4C90083CD04 /* missle-texture.png in Resources */,
 				4958E4142BED0771007F1757 /* art.scnassets in Resources */,
 				4958E4052BED072F007F1757 /* Base in Resources */,
+				496403EB2C2C247800DAA410 /* CoreMLSceneViewController.xib in Resources */,
 				49536BD22BFCE4C90083CD04 /* missile.scn in Resources */,
 				49536BBE2BFCBC1A0083CD04 /* _6.jpg in Resources */,
 				496403E22C2C032E00DAA410 /* RemoteCarViewController.xib in Resources */,
@@ -387,6 +405,8 @@
 				49536BAE2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift in Sources */,
 				496403E32C2C032E00DAA410 /* RemoteCarViewController.swift in Sources */,
 				49536BC42BFCE3DC0083CD04 /* MissileLaunchViewController.swift in Sources */,
+				496403F02C2C28BF00DAA410 /* Resnet50.mlmodel in Sources */,
+				496403EC2C2C247800DAA410 /* CoreMLSceneViewController.swift in Sources */,
 				496403E72C2C0F2000DAA410 /* Car.swift in Sources */,
 				496403D52C2B1C9100DAA410 /* ColladaSceneViewController.swift in Sources */,
 				4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */,

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoreMLSceneViewController" customModule="ARKitThings" customModuleProvider="target">
+            <connections>
+                <outlet property="sceneView" destination="SPp-4U-cNQ" id="Uxy-wM-bJv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SPp-4U-cNQ">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </arscnView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="SPp-4U-cNQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="23B-Nq-G5a"/>
+                <constraint firstAttribute="bottom" secondItem="SPp-4U-cNQ" secondAttribute="bottom" id="SKL-q1-QA0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SPp-4U-cNQ" secondAttribute="trailing" id="Z1k-cP-PbW"/>
+                <constraint firstItem="SPp-4U-cNQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ncn-JO-Pmb"/>
+            </constraints>
+            <point key="canvasLocation" x="-43.511450381679388" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

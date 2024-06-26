@@ -66,6 +66,10 @@ final class MainViewController: UIViewController {
             "Remote car",
             RemoteCarViewController()
         ),
+        (
+            "AR + CoreML",
+            CoreMLSceneViewController()
+        ),
     ]
     
     override func viewDidLoad() {
