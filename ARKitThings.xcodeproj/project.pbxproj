@@ -41,6 +41,8 @@
 		496403D42C2B1C9100DAA410 /* ColladaSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496403D32C2B1C9100DAA410 /* ColladaSceneViewController.xib */; };
 		496403D52C2B1C9100DAA410 /* ColladaSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403D22C2B1C9100DAA410 /* ColladaSceneViewController.swift */; };
 		496403D72C2B1D1C00DAA410 /* farm.dae in Resources */ = {isa = PBXBuildFile; fileRef = 496403D62C2B1D1C00DAA410 /* farm.dae */; };
+		496403DB2C2BEF7B00DAA410 /* LightsSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496403DA2C2BEF7B00DAA410 /* LightsSceneViewController.xib */; };
+		496403DC2C2BEF7B00DAA410 /* LightsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403D92C2BEF7B00DAA410 /* LightsSceneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +82,8 @@
 		496403D22C2B1C9100DAA410 /* ColladaSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColladaSceneViewController.swift; sourceTree = "<group>"; };
 		496403D32C2B1C9100DAA410 /* ColladaSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColladaSceneViewController.xib; sourceTree = "<group>"; };
 		496403D62C2B1D1C00DAA410 /* farm.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = farm.dae; sourceTree = "<group>"; };
+		496403D92C2BEF7B00DAA410 /* LightsSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightsSceneViewController.swift; sourceTree = "<group>"; };
+		496403DA2C2BEF7B00DAA410 /* LightsSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightsSceneViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,7 @@
 			children = (
 				496403D12C2B1C6F00DAA410 /* ColladaScene */,
 				4958E40F2BED0771007F1757 /* HelloWorld */,
+				496403D82C2BEF3900DAA410 /* Lights */,
 				49536BB32BFCB9430083CD04 /* LoadingModels */,
 				4958E4122BED0771007F1757 /* Main */,
 				49536BC12BFCE3C50083CD04 /* MissileLaunch */,
@@ -245,6 +250,15 @@
 				496403D32C2B1C9100DAA410 /* ColladaSceneViewController.xib */,
 			);
 			path = ColladaScene;
+			sourceTree = "<group>";
+		};
+		496403D82C2BEF3900DAA410 /* Lights */ = {
+			isa = PBXGroup;
+			children = (
+				496403D92C2BEF7B00DAA410 /* LightsSceneViewController.swift */,
+				496403DA2C2BEF7B00DAA410 /* LightsSceneViewController.xib */,
+			);
+			path = Lights;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496403DB2C2BEF7B00DAA410 /* LightsSceneViewController.xib in Resources */,
 				49536BC52BFCE3DC0083CD04 /* MissileLaunchViewController.xib in Resources */,
 				49536BD12BFCE4C90083CD04 /* spark.png in Resources */,
 				49536BCF2BFCE4C90083CD04 /* fire.scnp in Resources */,
@@ -348,6 +363,7 @@
 				496403D52C2B1C9100DAA410 /* ColladaSceneViewController.swift in Sources */,
 				4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */,
 				4958E4152BED0771007F1757 /* HelloWorldViewController.swift in Sources */,
+				496403DC2C2BEF7B00DAA410 /* LightsSceneViewController.swift in Sources */,
 				4958E4172BED0771007F1757 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

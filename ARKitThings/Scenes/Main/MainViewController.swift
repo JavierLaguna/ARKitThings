@@ -49,7 +49,19 @@ final class MainViewController: UIViewController {
         (
             "Collada (DAE) Models",
             ColladaSceneViewController()
-        )
+        ),
+        (
+            "Lights - DefaultLighting",
+            LightsSceneViewController(mode: .defaultLight)
+        ),
+        (
+            "Lights - SpotLight",
+            LightsSceneViewController(mode: .spotLight)
+        ),
+        (
+            "Lights - Estimated Room Light",
+            LightsSceneViewController(mode: .spotLightWithRoomLightEstimation)
+        ),
     ]
     
     override func viewDidLoad() {
