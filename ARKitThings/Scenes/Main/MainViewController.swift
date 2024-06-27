@@ -69,6 +69,10 @@ final class MainViewController: UIViewController {
         (
             "AR + CoreML",
             CoreMLSceneViewController()
+        ), 
+        (
+            "Occlusion",
+            OcclusionSceneViewController()
         ),
     ]
     

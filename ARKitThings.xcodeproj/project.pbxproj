@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49345A072C2D56BF00DD3553 /* OcclusionPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49345A062C2D56BF00DD3553 /* OcclusionPlane.swift */; };
 		49536BA52BFC80FE0083CD04 /* OverlayingPlanesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49536BA32BFC80FE0083CD04 /* OverlayingPlanesViewController.swift */; };
 		49536BA62BFC80FE0083CD04 /* OverlayingPlanesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49536BA42BFC80FE0083CD04 /* OverlayingPlanesViewController.xib */; };
 		49536BA82BFC88120083CD04 /* OverlayPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49536BA72BFC88120083CD04 /* OverlayPlane.swift */; };
@@ -51,9 +52,13 @@
 		496403EB2C2C247800DAA410 /* CoreMLSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496403EA2C2C247800DAA410 /* CoreMLSceneViewController.xib */; };
 		496403EC2C2C247800DAA410 /* CoreMLSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403E92C2C247800DAA410 /* CoreMLSceneViewController.swift */; };
 		496403F02C2C28BF00DAA410 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 496403EF2C2C28BF00DAA410 /* Resnet50.mlmodel */; };
+		496403F42C2C788B00DAA410 /* OcclusionSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496403F32C2C788B00DAA410 /* OcclusionSceneViewController.xib */; };
+		496403F52C2C788B00DAA410 /* OcclusionSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403F22C2C788B00DAA410 /* OcclusionSceneViewController.swift */; };
+		496403F72C2D40B200DAA410 /* fish.dae in Resources */ = {isa = PBXBuildFile; fileRef = 496403F62C2D40B200DAA410 /* fish.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49345A062C2D56BF00DD3553 /* OcclusionPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcclusionPlane.swift; sourceTree = "<group>"; };
 		49536BA32BFC80FE0083CD04 /* OverlayingPlanesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayingPlanesViewController.swift; sourceTree = "<group>"; };
 		49536BA42BFC80FE0083CD04 /* OverlayingPlanesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayingPlanesViewController.xib; sourceTree = "<group>"; };
 		49536BA72BFC88120083CD04 /* OverlayPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPlane.swift; sourceTree = "<group>"; };
@@ -100,6 +105,9 @@
 		496403E92C2C247800DAA410 /* CoreMLSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLSceneViewController.swift; sourceTree = "<group>"; };
 		496403EA2C2C247800DAA410 /* CoreMLSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreMLSceneViewController.xib; sourceTree = "<group>"; };
 		496403EF2C2C28BF00DAA410 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		496403F22C2C788B00DAA410 /* OcclusionSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcclusionSceneViewController.swift; sourceTree = "<group>"; };
+		496403F32C2C788B00DAA410 /* OcclusionSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OcclusionSceneViewController.xib; sourceTree = "<group>"; };
+		496403F62C2D40B200DAA410 /* fish.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = fish.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,13 +242,14 @@
 		4958E4132BED0771007F1757 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				496403E82C2C245600DAA410 /* CoreML */,
 				496403D12C2B1C6F00DAA410 /* ColladaScene */,
+				496403E82C2C245600DAA410 /* CoreML */,
 				4958E40F2BED0771007F1757 /* HelloWorld */,
 				496403D82C2BEF3900DAA410 /* Lights */,
 				49536BB32BFCB9430083CD04 /* LoadingModels */,
 				4958E4122BED0771007F1757 /* Main */,
 				49536BC12BFCE3C50083CD04 /* MissileLaunch */,
+				496403F12C2C786600DAA410 /* Occlusion */,
 				49536BA22BFC80C50083CD04 /* OverlayingPlanes */,
 				49536BAB2BFC98790083CD04 /* PlacingVirtualObjects */,
 				496403DF2C2C031400DAA410 /* RemoteCar */,
@@ -251,6 +260,7 @@
 		4958E4192BED0923007F1757 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				496403F62C2D40B200DAA410 /* fish.dae */,
 				496403DD2C2C02CC00DAA410 /* car.dae */,
 				496403D62C2B1D1C00DAA410 /* farm.dae */,
 				49536BC62BFCE4B60083CD04 /* missile */,
@@ -299,6 +309,16 @@
 				496403EA2C2C247800DAA410 /* CoreMLSceneViewController.xib */,
 			);
 			path = CoreML;
+			sourceTree = "<group>";
+		};
+		496403F12C2C786600DAA410 /* Occlusion */ = {
+			isa = PBXGroup;
+			children = (
+				49345A062C2D56BF00DD3553 /* OcclusionPlane.swift */,
+				496403F22C2C788B00DAA410 /* OcclusionSceneViewController.swift */,
+				496403F32C2C788B00DAA410 /* OcclusionSceneViewController.xib */,
+			);
+			path = Occlusion;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,11 +389,13 @@
 				496403D72C2B1D1C00DAA410 /* farm.dae in Resources */,
 				49536BCE2BFCE4C90083CD04 /* missle-texture.png in Resources */,
 				4958E4142BED0771007F1757 /* art.scnassets in Resources */,
+				496403F72C2D40B200DAA410 /* fish.dae in Resources */,
 				4958E4052BED072F007F1757 /* Base in Resources */,
 				496403EB2C2C247800DAA410 /* CoreMLSceneViewController.xib in Resources */,
 				49536BD22BFCE4C90083CD04 /* missile.scn in Resources */,
 				49536BBE2BFCBC1A0083CD04 /* _6.jpg in Resources */,
 				496403E22C2C032E00DAA410 /* RemoteCarViewController.xib in Resources */,
+				496403F42C2C788B00DAA410 /* OcclusionSceneViewController.xib in Resources */,
 				49536BAA2BFC8A840083CD04 /* overlay_grid.png in Resources */,
 				49536BAF2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.xib in Resources */,
 				496403D42C2B1C9100DAA410 /* ColladaSceneViewController.xib in Resources */,
@@ -405,8 +427,10 @@
 				49536BAE2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift in Sources */,
 				496403E32C2C032E00DAA410 /* RemoteCarViewController.swift in Sources */,
 				49536BC42BFCE3DC0083CD04 /* MissileLaunchViewController.swift in Sources */,
+				49345A072C2D56BF00DD3553 /* OcclusionPlane.swift in Sources */,
 				496403F02C2C28BF00DAA410 /* Resnet50.mlmodel in Sources */,
 				496403EC2C2C247800DAA410 /* CoreMLSceneViewController.swift in Sources */,
+				496403F52C2C788B00DAA410 /* OcclusionSceneViewController.swift in Sources */,
 				496403E72C2C0F2000DAA410 /* Car.swift in Sources */,
 				496403D52C2B1C9100DAA410 /* ColladaSceneViewController.swift in Sources */,
 				4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */,
