@@ -74,6 +74,10 @@ final class MainViewController: UIViewController {
             "Occlusion",
             OcclusionSceneViewController()
         ),
+        (
+            "Portals",
+            PortalSceneViewController()
+        ),
     ]
     
     override func viewDidLoad() {

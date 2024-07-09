@@ -55,6 +55,19 @@
 		496403F42C2C788B00DAA410 /* OcclusionSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496403F32C2C788B00DAA410 /* OcclusionSceneViewController.xib */; };
 		496403F52C2C788B00DAA410 /* OcclusionSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403F22C2C788B00DAA410 /* OcclusionSceneViewController.swift */; };
 		496403F72C2D40B200DAA410 /* fish.dae in Resources */ = {isa = PBXBuildFile; fileRef = 496403F62C2D40B200DAA410 /* fish.dae */; };
+		4998988E2C3DAD7300D7612E /* PortalSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */; };
+		4998988F2C3DAD7300D7612E /* PortalSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */; };
+		499898912C3DAEC000D7612E /* portal.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 499898902C3DAEC000D7612E /* portal.scnassets */; };
+		49DA15EB2C3DB149008DAEB4 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E12C3DB148008DAEB4 /* wallpaper.jpg */; };
+		49DA15EC2C3DB149008DAEB4 /* WallPainting_01.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E22C3DB148008DAEB4 /* WallPainting_01.mtl */; };
+		49DA15ED2C3DB149008DAEB4 /* tiles-wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E32C3DB148008DAEB4 /* tiles-wall.jpg */; };
+		49DA15EE2C3DB149008DAEB4 /* Desk_01.obj in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E42C3DB148008DAEB4 /* Desk_01.obj */; };
+		49DA15EF2C3DB149008DAEB4 /* Bed_01.scn in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E52C3DB148008DAEB4 /* Bed_01.scn */; };
+		49DA15F02C3DB149008DAEB4 /* WallPainting_01.obj in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E62C3DB148008DAEB4 /* WallPainting_01.obj */; };
+		49DA15F12C3DB149008DAEB4 /* wood-floor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E72C3DB148008DAEB4 /* wood-floor.jpg */; };
+		49DA15F22C3DB149008DAEB4 /* Desk_01.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E82C3DB149008DAEB4 /* Desk_01.mtl */; };
+		49DA15F32C3DB149008DAEB4 /* Bed_01.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E92C3DB149008DAEB4 /* Bed_01.mtl */; };
+		49DA15F42C3DB149008DAEB4 /* bed.dae in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15EA2C3DB149008DAEB4 /* bed.dae */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +121,19 @@
 		496403F22C2C788B00DAA410 /* OcclusionSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcclusionSceneViewController.swift; sourceTree = "<group>"; };
 		496403F32C2C788B00DAA410 /* OcclusionSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OcclusionSceneViewController.xib; sourceTree = "<group>"; };
 		496403F62C2D40B200DAA410 /* fish.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = fish.dae; sourceTree = "<group>"; };
+		4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalSceneViewController.swift; sourceTree = "<group>"; };
+		4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortalSceneViewController.xib; sourceTree = "<group>"; };
+		499898902C3DAEC000D7612E /* portal.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = portal.scnassets; sourceTree = "<group>"; };
+		49DA15E12C3DB148008DAEB4 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
+		49DA15E22C3DB148008DAEB4 /* WallPainting_01.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WallPainting_01.mtl; sourceTree = "<group>"; };
+		49DA15E32C3DB148008DAEB4 /* tiles-wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tiles-wall.jpg"; sourceTree = "<group>"; };
+		49DA15E42C3DB148008DAEB4 /* Desk_01.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Desk_01.obj; sourceTree = "<group>"; };
+		49DA15E52C3DB148008DAEB4 /* Bed_01.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Bed_01.scn; sourceTree = "<group>"; };
+		49DA15E62C3DB148008DAEB4 /* WallPainting_01.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WallPainting_01.obj; sourceTree = "<group>"; };
+		49DA15E72C3DB148008DAEB4 /* wood-floor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wood-floor.jpg"; sourceTree = "<group>"; };
+		49DA15E82C3DB149008DAEB4 /* Desk_01.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Desk_01.mtl; sourceTree = "<group>"; };
+		49DA15E92C3DB149008DAEB4 /* Bed_01.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Bed_01.mtl; sourceTree = "<group>"; };
+		49DA15EA2C3DB149008DAEB4 /* bed.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = bed.dae; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +278,7 @@
 				496403F12C2C786600DAA410 /* Occlusion */,
 				49536BA22BFC80C50083CD04 /* OverlayingPlanes */,
 				49536BAB2BFC98790083CD04 /* PlacingVirtualObjects */,
+				4998988B2C3DAD5300D7612E /* Portal */,
 				496403DF2C2C031400DAA410 /* RemoteCar */,
 			);
 			path = Scenes;
@@ -260,6 +287,8 @@
 		4958E4192BED0923007F1757 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				49DA15F52C3DB1CB008DAEB4 /* portalItems */,
+				499898902C3DAEC000D7612E /* portal.scnassets */,
 				496403F62C2D40B200DAA410 /* fish.dae */,
 				496403DD2C2C02CC00DAA410 /* car.dae */,
 				496403D62C2B1D1C00DAA410 /* farm.dae */,
@@ -319,6 +348,32 @@
 				496403F32C2C788B00DAA410 /* OcclusionSceneViewController.xib */,
 			);
 			path = Occlusion;
+			sourceTree = "<group>";
+		};
+		4998988B2C3DAD5300D7612E /* Portal */ = {
+			isa = PBXGroup;
+			children = (
+				4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */,
+				4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */,
+			);
+			path = Portal;
+			sourceTree = "<group>";
+		};
+		49DA15F52C3DB1CB008DAEB4 /* portalItems */ = {
+			isa = PBXGroup;
+			children = (
+				49DA15E92C3DB149008DAEB4 /* Bed_01.mtl */,
+				49DA15E52C3DB148008DAEB4 /* Bed_01.scn */,
+				49DA15E12C3DB148008DAEB4 /* wallpaper.jpg */,
+				49DA15E72C3DB148008DAEB4 /* wood-floor.jpg */,
+				49DA15EA2C3DB149008DAEB4 /* bed.dae */,
+				49DA15E82C3DB149008DAEB4 /* Desk_01.mtl */,
+				49DA15E42C3DB148008DAEB4 /* Desk_01.obj */,
+				49DA15E32C3DB148008DAEB4 /* tiles-wall.jpg */,
+				49DA15E22C3DB148008DAEB4 /* WallPainting_01.mtl */,
+				49DA15E62C3DB148008DAEB4 /* WallPainting_01.obj */,
+			);
+			path = portalItems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,16 +438,22 @@
 				49536BC52BFCE3DC0083CD04 /* MissileLaunchViewController.xib in Resources */,
 				49536BD12BFCE4C90083CD04 /* spark.png in Resources */,
 				49536BCF2BFCE4C90083CD04 /* fire.scnp in Resources */,
+				4998988F2C3DAD7300D7612E /* PortalSceneViewController.xib in Resources */,
+				499898912C3DAEC000D7612E /* portal.scnassets in Resources */,
 				4958E4162BED0771007F1757 /* HelloWorldViewController.xib in Resources */,
 				4958E4022BED072F007F1757 /* Assets.xcassets in Resources */,
+				49DA15F32C3DB149008DAEB4 /* Bed_01.mtl in Resources */,
 				4958E4182BED0771007F1757 /* MainViewController.xib in Resources */,
 				496403D72C2B1D1C00DAA410 /* farm.dae in Resources */,
 				49536BCE2BFCE4C90083CD04 /* missle-texture.png in Resources */,
 				4958E4142BED0771007F1757 /* art.scnassets in Resources */,
 				496403F72C2D40B200DAA410 /* fish.dae in Resources */,
+				49DA15EE2C3DB149008DAEB4 /* Desk_01.obj in Resources */,
 				4958E4052BED072F007F1757 /* Base in Resources */,
 				496403EB2C2C247800DAA410 /* CoreMLSceneViewController.xib in Resources */,
 				49536BD22BFCE4C90083CD04 /* missile.scn in Resources */,
+				49DA15F42C3DB149008DAEB4 /* bed.dae in Resources */,
+				49DA15EF2C3DB149008DAEB4 /* Bed_01.scn in Resources */,
 				49536BBE2BFCBC1A0083CD04 /* _6.jpg in Resources */,
 				496403E22C2C032E00DAA410 /* RemoteCarViewController.xib in Resources */,
 				496403F42C2C788B00DAA410 /* OcclusionSceneViewController.xib in Resources */,
@@ -401,10 +462,16 @@
 				496403D42C2B1C9100DAA410 /* ColladaSceneViewController.xib in Resources */,
 				49536BD02BFCE4C90083CD04 /* smoke.png in Resources */,
 				49536BB72BFCB9BC0083CD04 /* LoadingModelsViewController.xib in Resources */,
+				49DA15EC2C3DB149008DAEB4 /* WallPainting_01.mtl in Resources */,
 				49536BBD2BFCBC1A0083CD04 /* tischholz.jpg in Resources */,
+				49DA15ED2C3DB149008DAEB4 /* tiles-wall.jpg in Resources */,
 				49536BA62BFC80FE0083CD04 /* OverlayingPlanesViewController.xib in Resources */,
+				49DA15F02C3DB149008DAEB4 /* WallPainting_01.obj in Resources */,
+				49DA15F22C3DB149008DAEB4 /* Desk_01.mtl in Resources */,
 				49536BBF2BFCBC1A0083CD04 /* tischholz2.jpg in Resources */,
+				49DA15EB2C3DB149008DAEB4 /* wallpaper.jpg in Resources */,
 				496403DE2C2C02CC00DAA410 /* car.dae in Resources */,
+				49DA15F12C3DB149008DAEB4 /* wood-floor.jpg in Resources */,
 				49536BC02BFCBC1A0083CD04 /* bench.dae in Resources */,
 				49536BD42BFCE4C90083CD04 /* smoke.scnp in Resources */,
 			);
@@ -426,6 +493,7 @@
 				49536BB62BFCB9BC0083CD04 /* LoadingModelsViewController.swift in Sources */,
 				49536BAE2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift in Sources */,
 				496403E32C2C032E00DAA410 /* RemoteCarViewController.swift in Sources */,
+				4998988E2C3DAD7300D7612E /* PortalSceneViewController.swift in Sources */,
 				49536BC42BFCE3DC0083CD04 /* MissileLaunchViewController.swift in Sources */,
 				49345A072C2D56BF00DD3553 /* OcclusionPlane.swift in Sources */,
 				496403F02C2C28BF00DAA410 /* Resnet50.mlmodel in Sources */,
