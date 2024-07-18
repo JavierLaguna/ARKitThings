@@ -6,7 +6,7 @@ final class PortalSceneViewController: UIViewController {
 
     @IBOutlet private weak var sceneView: ARSCNView!
     
-    private var planes: [OcclusionPlane] = []
+    private var planes: [PortalPlane] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +43,7 @@ extension PortalSceneViewController: ARSCNViewDelegate {
             return
         }
         
-        let plane = OcclusionPlane(anchor: planeAnchor as! ARPlaneAnchor)
+        let plane = PortalPlane(anchor: planeAnchor as! ARPlaneAnchor)
         planes.append(plane)
         node.addChildNode(plane)
     }
@@ -81,14 +81,10 @@ private extension PortalSceneViewController {
     @objc func tapped(recognizer: UIGestureRecognizer) {
         let sceneView = recognizer.view as! ARSCNView
         let touchLocation = recognizer.location(in: sceneView)
-        
         let hitTestResults = sceneView.hitTest(touchLocation, types: .existingPlaneUsingExtent)
         
-        if !hitTestResults.isEmpty {
-            
-            let hitTestResult = hitTestResults.first!
-            addPortal(hitResult :hitTestResult)
-            
+        if let hitTestResult = hitTestResults.first {
+            addPortal(hitResult: hitTestResult)
         }
     }
     
@@ -96,8 +92,12 @@ private extension PortalSceneViewController {
         let portalScene = SCNScene(named: "portal.scnassets/portal.scn")!
         let portalNode = (portalScene.rootNode.childNode(withName: "portalNode", recursively: true))!
         
-        portalNode.position = SCNVector3(hitResult.worldTransform.columns.3.x, hitResult.worldTransform.columns.3.y, hitResult.worldTransform.columns.3.z)
+        portalNode.position = SCNVector3(
+            hitResult.worldTransform.columns.3.x,
+            hitResult.worldTransform.columns.3.y,
+            hitResult.worldTransform.columns.3.z
+        )
         
-        self.sceneView.scene.rootNode.addChildNode(portalNode)
+        sceneView.scene.rootNode.addChildNode(portalNode)
     }
 }
