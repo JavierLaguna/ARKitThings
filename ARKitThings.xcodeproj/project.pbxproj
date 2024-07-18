@@ -58,6 +58,9 @@
 		497366622C493E450061C35E /* PortalPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497366612C493E450061C35E /* PortalPlane.swift */; };
 		497366692C4941EC0061C35E /* iron_bed.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 497366672C4941EC0061C35E /* iron_bed.mtl */; };
 		4973666A2C4941EC0061C35E /* iron_bed.obj in Resources */ = {isa = PBXBuildFile; fileRef = 497366682C4941EC0061C35E /* iron_bed.obj */; };
+		4973666E2C49461D0061C35E /* ARVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4973666C2C49461D0061C35E /* ARVideoViewController.swift */; };
+		4973666F2C49461D0061C35E /* ARVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4973666D2C49461D0061C35E /* ARVideoViewController.xib */; };
+		497366712C4946840061C35E /* big_buck_bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 497366702C4946840061C35E /* big_buck_bunny.mp4 */; };
 		4998988E2C3DAD7300D7612E /* PortalSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */; };
 		4998988F2C3DAD7300D7612E /* PortalSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */; };
 		499898912C3DAEC000D7612E /* portal.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 499898902C3DAEC000D7612E /* portal.scnassets */; };
@@ -123,6 +126,9 @@
 		497366612C493E450061C35E /* PortalPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalPlane.swift; sourceTree = "<group>"; };
 		497366672C4941EC0061C35E /* iron_bed.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iron_bed.mtl; sourceTree = "<group>"; };
 		497366682C4941EC0061C35E /* iron_bed.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = iron_bed.obj; sourceTree = "<group>"; };
+		4973666C2C49461D0061C35E /* ARVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARVideoViewController.swift; sourceTree = "<group>"; };
+		4973666D2C49461D0061C35E /* ARVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARVideoViewController.xib; sourceTree = "<group>"; };
+		497366702C4946840061C35E /* big_buck_bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = big_buck_bunny.mp4; sourceTree = "<group>"; };
 		4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalSceneViewController.swift; sourceTree = "<group>"; };
 		4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortalSceneViewController.xib; sourceTree = "<group>"; };
 		499898902C3DAEC000D7612E /* portal.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = portal.scnassets; sourceTree = "<group>"; };
@@ -266,6 +272,7 @@
 		4958E4132BED0771007F1757 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				4973666B2C4946040061C35E /* ARVideo */,
 				496403D12C2B1C6F00DAA410 /* ColladaScene */,
 				496403E82C2C245600DAA410 /* CoreML */,
 				4958E40F2BED0771007F1757 /* HelloWorld */,
@@ -285,6 +292,7 @@
 		4958E4192BED0923007F1757 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				497366702C4946840061C35E /* big_buck_bunny.mp4 */,
 				49DA15F52C3DB1CB008DAEB4 /* portalItems */,
 				499898902C3DAEC000D7612E /* portal.scnassets */,
 				496403F62C2D40B200DAA410 /* fish.dae */,
@@ -346,6 +354,15 @@
 				496403F32C2C788B00DAA410 /* OcclusionSceneViewController.xib */,
 			);
 			path = Occlusion;
+			sourceTree = "<group>";
+		};
+		4973666B2C4946040061C35E /* ARVideo */ = {
+			isa = PBXGroup;
+			children = (
+				4973666C2C49461D0061C35E /* ARVideoViewController.swift */,
+				4973666D2C49461D0061C35E /* ARVideoViewController.xib */,
+			);
+			path = ARVideo;
 			sourceTree = "<group>";
 		};
 		4998988B2C3DAD5300D7612E /* Portal */ = {
@@ -433,6 +450,7 @@
 			files = (
 				496403DB2C2BEF7B00DAA410 /* LightsSceneViewController.xib in Resources */,
 				49536BC52BFCE3DC0083CD04 /* MissileLaunchViewController.xib in Resources */,
+				497366712C4946840061C35E /* big_buck_bunny.mp4 in Resources */,
 				49536BD12BFCE4C90083CD04 /* spark.png in Resources */,
 				49536BCF2BFCE4C90083CD04 /* fire.scnp in Resources */,
 				4998988F2C3DAD7300D7612E /* PortalSceneViewController.xib in Resources */,
@@ -460,6 +478,7 @@
 				49536BB72BFCB9BC0083CD04 /* LoadingModelsViewController.xib in Resources */,
 				49DA15EC2C3DB149008DAEB4 /* WallPainting_01.mtl in Resources */,
 				49536BBD2BFCBC1A0083CD04 /* tischholz.jpg in Resources */,
+				4973666F2C49461D0061C35E /* ARVideoViewController.xib in Resources */,
 				49DA15ED2C3DB149008DAEB4 /* tiles-wall.jpg in Resources */,
 				49536BA62BFC80FE0083CD04 /* OverlayingPlanesViewController.xib in Resources */,
 				49DA15F02C3DB149008DAEB4 /* WallPainting_01.obj in Resources */,
@@ -500,6 +519,7 @@
 				4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */,
 				4958E4152BED0771007F1757 /* HelloWorldViewController.swift in Sources */,
 				496403DC2C2BEF7B00DAA410 /* LightsSceneViewController.swift in Sources */,
+				4973666E2C49461D0061C35E /* ARVideoViewController.swift in Sources */,
 				4958E4172BED0771007F1757 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

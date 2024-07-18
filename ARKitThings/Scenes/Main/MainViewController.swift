@@ -78,6 +78,10 @@ final class MainViewController: UIViewController {
             "Portals",
             PortalSceneViewController()
         ),
+        (
+            "AR Video",
+            ARVideoViewController()
+        )
     ]
     
     override func viewDidLoad() {
