@@ -81,7 +81,11 @@ final class MainViewController: UIViewController {
         (
             "AR Video",
             ARVideoViewController()
-        )
+        ),
+        (
+            "Image detection",
+            ImageDetectionViewController()
+        ),
     ]
     
     override func viewDidLoad() {
