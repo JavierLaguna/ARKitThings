@@ -101,7 +101,7 @@ private extension CoreMLSceneViewController {
         return parentNode
     }
     
-    func performVisionRequest(pixelBuffer :CVPixelBuffer) {
+    func performVisionRequest(pixelBuffer: CVPixelBuffer) {
         let visionModel = try! VNCoreMLModel(for: self.resnetModel.model)
         
         let request = VNCoreMLRequest(model: visionModel) { request, error in
@@ -131,7 +131,7 @@ private extension CoreMLSceneViewController {
         }
     }
     
-    func displayPredictions(text :String) {
+    func displayPredictions(text: String) {
         let node = createText(text: text)
         node.position = SCNVector3(
             hitTestResult.worldTransform.columns.3.x,

@@ -23,11 +23,11 @@ final class ImageDetectionViewController: UIViewController {
         
         // Add dynamic images
         /*
-        let blackBerryRefImage = ARReferenceImage((UIImage(named: "BlackBerry.JPG")?.cgImage!)!, orientation: CGImagePropertyOrientation.up, physicalWidth: 0.28)
-        
-        let javaRefImage = ARReferenceImage((UIImage(named: "Java.JPG")?.cgImage!)!, orientation: CGImagePropertyOrientation.up, physicalWidth: 0.16)
-        
-        configuration.detectionImages = Set([blackBerryRefImage,javaRefImage])
+         let blackBerryRefImage = ARReferenceImage((UIImage(named: "BlackBerry.JPG")?.cgImage!)!, orientation: CGImagePropertyOrientation.up, physicalWidth: 0.28)
+         
+         let javaRefImage = ARReferenceImage((UIImage(named: "Java.JPG")?.cgImage!)!, orientation: CGImagePropertyOrientation.up, physicalWidth: 0.16)
+         
+         configuration.detectionImages = Set([blackBerryRefImage,javaRefImage])
          */
         
         let configuration = ARWorldTrackingConfiguration()
@@ -47,19 +47,47 @@ final class ImageDetectionViewController: UIViewController {
 extension ImageDetectionViewController: ARSCNViewDelegate {
     
     func renderer(_ renderer: any SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
-        if let imageAnchor = anchor as? ARImageAnchor {
-            if let name = imageAnchor.referenceImage.name {
-                print("name")
-//                DispatchQueue.main.async {
-//                    
-//                    self.hud = MBProgressHUD.showAdded(to: self.view, animated: true)
-//                    self.hud.label.text = name
-//                    
-//                    self.hud.hide(animated: true, afterDelay: 2.0)
-//                }
-                
-            }
+        guard let imageAnchor = anchor as? ARImageAnchor,
+              let name = imageAnchor.referenceImage.name else {
+            return
         }
+        
+        DispatchQueue.main.async {
+            let textNode = self.createText(text: name)
+            textNode.position = SCNVector3(
+                node.worldPosition.x,
+                node.worldPosition.y,
+                node.worldPosition.z
+            )
+            
+            self.sceneView.scene.rootNode.addChildNode(textNode)
+        }
+    }
+    
+    func createText(text: String) -> SCNNode {
+        let parentNode = SCNNode()
+        
+        let sphere = SCNSphere(radius: 0.01)
+        let sphereMaterial = SCNMaterial()
+        sphereMaterial.diffuse.contents = UIColor.orange
+        sphere.firstMaterial = sphereMaterial
+        let sphereNode = SCNNode(geometry: sphere)
+        
+        let textGeometry = SCNText(string: text, extrusionDepth: 0)
+        textGeometry.alignmentMode = CATextLayerAlignmentMode.center.rawValue
+        textGeometry.firstMaterial?.diffuse.contents = UIColor.orange
+        textGeometry.firstMaterial?.specular.contents = UIColor.white
+        textGeometry.firstMaterial?.isDoubleSided = true
+        
+        let font = UIFont(name: "Futura", size: 0.15)
+        textGeometry.font = font
+        
+        let textNode = SCNNode(geometry: textGeometry)
+        textNode.scale = SCNVector3Make(0.2, 0.2, 0.2)
+        
+        parentNode.addChildNode(sphereNode)
+        parentNode.addChildNode(textNode)
+        return parentNode
     }
 }
 
