@@ -86,6 +86,10 @@ final class MainViewController: UIViewController {
             "Image detection",
             ImageDetectionViewController()
         ),
+        (
+            "Model Gestures",
+            ModelGesturesViewController()
+        ),
     ]
     
     override func viewDidLoad() {

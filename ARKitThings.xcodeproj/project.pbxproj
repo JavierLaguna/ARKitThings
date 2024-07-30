@@ -39,6 +39,9 @@
 		4958E4162BED0771007F1757 /* HelloWorldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4958E40E2BED0771007F1757 /* HelloWorldViewController.xib */; };
 		4958E4172BED0771007F1757 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4958E4102BED0771007F1757 /* MainViewController.swift */; };
 		4958E4182BED0771007F1757 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4958E4112BED0771007F1757 /* MainViewController.xib */; };
+		49621CF02C4A9A0F00BE4506 /* chair.dae in Resources */ = {isa = PBXBuildFile; fileRef = 49621CEC2C4A9A0F00BE4506 /* chair.dae */; };
+		49621CF12C4A9A0F00BE4506 /* Neil Woo03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49621CED2C4A9A0F00BE4506 /* Neil Woo03.jpg */; };
+		49621CF22C4A9A0F00BE4506 /* NeilFabricPlain008.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49621CEE2C4A9A0F00BE4506 /* NeilFabricPlain008.jpg */; };
 		496403D42C2B1C9100DAA410 /* ColladaSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 496403D32C2B1C9100DAA410 /* ColladaSceneViewController.xib */; };
 		496403D52C2B1C9100DAA410 /* ColladaSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496403D22C2B1C9100DAA410 /* ColladaSceneViewController.swift */; };
 		496403D72C2B1D1C00DAA410 /* farm.dae in Resources */ = {isa = PBXBuildFile; fileRef = 496403D62C2B1D1C00DAA410 /* farm.dae */; };
@@ -63,6 +66,8 @@
 		497366712C4946840061C35E /* big_buck_bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 497366702C4946840061C35E /* big_buck_bunny.mp4 */; };
 		497366752C4951D30061C35E /* ImageDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497366732C4951D30061C35E /* ImageDetectionViewController.swift */; };
 		497366762C4951D30061C35E /* ImageDetectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497366742C4951D30061C35E /* ImageDetectionViewController.xib */; };
+		49786B042C49677D00DBDEA9 /* ModelGesturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49786B022C49677D00DBDEA9 /* ModelGesturesViewController.swift */; };
+		49786B052C49677D00DBDEA9 /* ModelGesturesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49786B032C49677D00DBDEA9 /* ModelGesturesViewController.xib */; };
 		4998988E2C3DAD7300D7612E /* PortalSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */; };
 		4998988F2C3DAD7300D7612E /* PortalSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */; };
 		499898912C3DAEC000D7612E /* portal.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 499898902C3DAEC000D7612E /* portal.scnassets */; };
@@ -109,6 +114,9 @@
 		4958E40E2BED0771007F1757 /* HelloWorldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloWorldViewController.xib; sourceTree = "<group>"; };
 		4958E4102BED0771007F1757 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4958E4112BED0771007F1757 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		49621CEC2C4A9A0F00BE4506 /* chair.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = chair.dae; sourceTree = "<group>"; };
+		49621CED2C4A9A0F00BE4506 /* Neil Woo03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Neil Woo03.jpg"; sourceTree = "<group>"; };
+		49621CEE2C4A9A0F00BE4506 /* NeilFabricPlain008.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NeilFabricPlain008.jpg; sourceTree = "<group>"; };
 		496403D22C2B1C9100DAA410 /* ColladaSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColladaSceneViewController.swift; sourceTree = "<group>"; };
 		496403D32C2B1C9100DAA410 /* ColladaSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColladaSceneViewController.xib; sourceTree = "<group>"; };
 		496403D62C2B1D1C00DAA410 /* farm.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = farm.dae; sourceTree = "<group>"; };
@@ -133,6 +141,8 @@
 		497366702C4946840061C35E /* big_buck_bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = big_buck_bunny.mp4; sourceTree = "<group>"; };
 		497366732C4951D30061C35E /* ImageDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectionViewController.swift; sourceTree = "<group>"; };
 		497366742C4951D30061C35E /* ImageDetectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetectionViewController.xib; sourceTree = "<group>"; };
+		49786B022C49677D00DBDEA9 /* ModelGesturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGesturesViewController.swift; sourceTree = "<group>"; };
+		49786B032C49677D00DBDEA9 /* ModelGesturesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModelGesturesViewController.xib; sourceTree = "<group>"; };
 		4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalSceneViewController.swift; sourceTree = "<group>"; };
 		4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortalSceneViewController.xib; sourceTree = "<group>"; };
 		499898902C3DAEC000D7612E /* portal.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = portal.scnassets; sourceTree = "<group>"; };
@@ -285,6 +295,7 @@
 				49536BB32BFCB9430083CD04 /* LoadingModels */,
 				4958E4122BED0771007F1757 /* Main */,
 				49536BC12BFCE3C50083CD04 /* MissileLaunch */,
+				497366772C49672F0061C35E /* ModelGestures */,
 				496403F12C2C786600DAA410 /* Occlusion */,
 				49536BA22BFC80C50083CD04 /* OverlayingPlanes */,
 				49536BAB2BFC98790083CD04 /* PlacingVirtualObjects */,
@@ -297,6 +308,7 @@
 		4958E4192BED0923007F1757 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				49621CEF2C4A9A0F00BE4506 /* chair */,
 				497366702C4946840061C35E /* big_buck_bunny.mp4 */,
 				49DA15F52C3DB1CB008DAEB4 /* portalItems */,
 				499898902C3DAEC000D7612E /* portal.scnassets */,
@@ -310,6 +322,16 @@
 				4958E4012BED072F007F1757 /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		49621CEF2C4A9A0F00BE4506 /* chair */ = {
+			isa = PBXGroup;
+			children = (
+				49621CEC2C4A9A0F00BE4506 /* chair.dae */,
+				49621CED2C4A9A0F00BE4506 /* Neil Woo03.jpg */,
+				49621CEE2C4A9A0F00BE4506 /* NeilFabricPlain008.jpg */,
+			);
+			path = chair;
 			sourceTree = "<group>";
 		};
 		496403D12C2B1C6F00DAA410 /* ColladaScene */ = {
@@ -377,6 +399,15 @@
 				497366742C4951D30061C35E /* ImageDetectionViewController.xib */,
 			);
 			path = ImageDetection;
+			sourceTree = "<group>";
+		};
+		497366772C49672F0061C35E /* ModelGestures */ = {
+			isa = PBXGroup;
+			children = (
+				49786B022C49677D00DBDEA9 /* ModelGesturesViewController.swift */,
+				49786B032C49677D00DBDEA9 /* ModelGesturesViewController.xib */,
+			);
+			path = ModelGestures;
 			sourceTree = "<group>";
 		};
 		4998988B2C3DAD5300D7612E /* Portal */ = {
@@ -465,11 +496,14 @@
 				496403DB2C2BEF7B00DAA410 /* LightsSceneViewController.xib in Resources */,
 				49536BC52BFCE3DC0083CD04 /* MissileLaunchViewController.xib in Resources */,
 				497366712C4946840061C35E /* big_buck_bunny.mp4 in Resources */,
+				49621CF22C4A9A0F00BE4506 /* NeilFabricPlain008.jpg in Resources */,
 				49536BD12BFCE4C90083CD04 /* spark.png in Resources */,
 				49536BCF2BFCE4C90083CD04 /* fire.scnp in Resources */,
 				4998988F2C3DAD7300D7612E /* PortalSceneViewController.xib in Resources */,
 				499898912C3DAEC000D7612E /* portal.scnassets in Resources */,
+				49621CF02C4A9A0F00BE4506 /* chair.dae in Resources */,
 				4958E4162BED0771007F1757 /* HelloWorldViewController.xib in Resources */,
+				49621CF12C4A9A0F00BE4506 /* Neil Woo03.jpg in Resources */,
 				4958E4022BED072F007F1757 /* Assets.xcassets in Resources */,
 				4958E4182BED0771007F1757 /* MainViewController.xib in Resources */,
 				496403D72C2B1D1C00DAA410 /* farm.dae in Resources */,
@@ -478,6 +512,7 @@
 				4958E4142BED0771007F1757 /* art.scnassets in Resources */,
 				496403F72C2D40B200DAA410 /* fish.dae in Resources */,
 				4958E4052BED072F007F1757 /* Base in Resources */,
+				49786B052C49677D00DBDEA9 /* ModelGesturesViewController.xib in Resources */,
 				496403EB2C2C247800DAA410 /* CoreMLSceneViewController.xib in Resources */,
 				49536BD22BFCE4C90083CD04 /* missile.scn in Resources */,
 				497366692C4941EC0061C35E /* iron_bed.mtl in Resources */,
@@ -533,6 +568,7 @@
 				496403E72C2C0F2000DAA410 /* Car.swift in Sources */,
 				496403D52C2B1C9100DAA410 /* ColladaSceneViewController.swift in Sources */,
 				4958E3FB2BED072E007F1757 /* SceneDelegate.swift in Sources */,
+				49786B042C49677D00DBDEA9 /* ModelGesturesViewController.swift in Sources */,
 				4958E4152BED0771007F1757 /* HelloWorldViewController.swift in Sources */,
 				496403DC2C2BEF7B00DAA410 /* LightsSceneViewController.swift in Sources */,
 				4973666E2C49461D0061C35E /* ARVideoViewController.swift in Sources */,
