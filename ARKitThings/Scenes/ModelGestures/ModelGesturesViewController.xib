@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModelGesturesViewController" customModule="ARKitThings" customModuleProvider="target">
             <connections>
+                <outlet property="sceneView" destination="2n2-vA-TD9" id="bga-fL-MCw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
