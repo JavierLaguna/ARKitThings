@@ -14,6 +14,7 @@ final class ModelGesturesViewController: UIViewController {
         super.viewDidLoad()
         
         showDebugOptions()
+        sceneView.autoenablesDefaultLighting = true
         sceneView.delegate = self
         
         let scene = SCNScene()
