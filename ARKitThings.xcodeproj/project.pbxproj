@@ -71,6 +71,7 @@
 		4998988E2C3DAD7300D7612E /* PortalSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */; };
 		4998988F2C3DAD7300D7612E /* PortalSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */; };
 		499898912C3DAEC000D7612E /* portal.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 499898902C3DAEC000D7612E /* portal.scnassets */; };
+		499A3A692C5A4CD000B77050 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A3A682C5A4CD000B77050 /* Scene.swift */; };
 		49DA15EB2C3DB149008DAEB4 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E12C3DB148008DAEB4 /* wallpaper.jpg */; };
 		49DA15EC2C3DB149008DAEB4 /* WallPainting_01.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E22C3DB148008DAEB4 /* WallPainting_01.mtl */; };
 		49DA15ED2C3DB149008DAEB4 /* tiles-wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E32C3DB148008DAEB4 /* tiles-wall.jpg */; };
@@ -146,6 +147,7 @@
 		4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalSceneViewController.swift; sourceTree = "<group>"; };
 		4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortalSceneViewController.xib; sourceTree = "<group>"; };
 		499898902C3DAEC000D7612E /* portal.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = portal.scnassets; sourceTree = "<group>"; };
+		499A3A682C5A4CD000B77050 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		49DA15E12C3DB148008DAEB4 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
 		49DA15E22C3DB148008DAEB4 /* WallPainting_01.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WallPainting_01.mtl; sourceTree = "<group>"; };
 		49DA15E32C3DB148008DAEB4 /* tiles-wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tiles-wall.jpg"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 			children = (
 				49536BB12BFCA6840083CD04 /* BodyType.swift */,
 				49536BA72BFC88120083CD04 /* OverlayPlane.swift */,
+				499A3A682C5A4CD000B77050 /* Scene.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				49536BA52BFC80FE0083CD04 /* OverlayingPlanesViewController.swift in Sources */,
 				49536BB22BFCA6840083CD04 /* BodyType.swift in Sources */,
 				49536BA82BFC88120083CD04 /* OverlayPlane.swift in Sources */,
+				499A3A692C5A4CD000B77050 /* Scene.swift in Sources */,
 				4958E3F92BED072E007F1757 /* AppDelegate.swift in Sources */,
 				496403E52C2C0BAA00DAA410 /* GameButton.swift in Sources */,
 				497366752C4951D30061C35E /* ImageDetectionViewController.swift in Sources */,
