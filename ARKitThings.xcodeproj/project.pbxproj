@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491DF7692C5B898F000BB1AA /* Google-Pixel-XL-Black-Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 491DF7632C5B898F000BB1AA /* Google-Pixel-XL-Black-Back.png */; };
+		491DF76A2C5B898F000BB1AA /* Phone_01.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 491DF7642C5B898F000BB1AA /* Phone_01.mtl */; };
+		491DF76B2C5B898F000BB1AA /* Phone_01.scn in Resources */ = {isa = PBXBuildFile; fileRef = 491DF7652C5B898F000BB1AA /* Phone_01.scn */; };
+		491DF76C2C5B898F000BB1AA /* pixel-screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 491DF7662C5B898F000BB1AA /* pixel-screenshot.png */; };
+		491DF76D2C5B898F000BB1AA /* texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 491DF7672C5B898F000BB1AA /* texture.jpg */; };
+		491DF7712C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491DF7702C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.xib */; };
+		491DF7722C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DF76F2C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.swift */; };
+		491DF7842C5B945C000BB1AA /* snake.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 491DF7812C5B945C000BB1AA /* snake.mtl */; };
+		491DF7852C5B945C000BB1AA /* snake.obj in Resources */ = {isa = PBXBuildFile; fileRef = 491DF7822C5B945C000BB1AA /* snake.obj */; };
+		491DF7892C5B94B5000BB1AA /* snake.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 491DF7882C5B94B5000BB1AA /* snake.scnassets */; };
 		49345A072C2D56BF00DD3553 /* OcclusionPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49345A062C2D56BF00DD3553 /* OcclusionPlane.swift */; };
 		49536BA52BFC80FE0083CD04 /* OverlayingPlanesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49536BA32BFC80FE0083CD04 /* OverlayingPlanesViewController.swift */; };
 		49536BA62BFC80FE0083CD04 /* OverlayingPlanesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49536BA42BFC80FE0083CD04 /* OverlayingPlanesViewController.xib */; };
@@ -81,6 +91,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491DF7632C5B898F000BB1AA /* Google-Pixel-XL-Black-Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Google-Pixel-XL-Black-Back.png"; sourceTree = "<group>"; };
+		491DF7642C5B898F000BB1AA /* Phone_01.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Phone_01.mtl; sourceTree = "<group>"; };
+		491DF7652C5B898F000BB1AA /* Phone_01.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = Phone_01.scn; sourceTree = "<group>"; };
+		491DF7662C5B898F000BB1AA /* pixel-screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pixel-screenshot.png"; sourceTree = "<group>"; };
+		491DF7672C5B898F000BB1AA /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture.jpg; sourceTree = "<group>"; };
+		491DF76F2C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectionWithModelViewController.swift; sourceTree = "<group>"; };
+		491DF7702C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetectionWithModelViewController.xib; sourceTree = "<group>"; };
+		491DF7812C5B945C000BB1AA /* snake.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = snake.mtl; sourceTree = "<group>"; };
+		491DF7822C5B945C000BB1AA /* snake.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = snake.obj; sourceTree = "<group>"; };
+		491DF7882C5B94B5000BB1AA /* snake.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = snake.scnassets; sourceTree = "<group>"; };
 		49345A062C2D56BF00DD3553 /* OcclusionPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcclusionPlane.swift; sourceTree = "<group>"; };
 		49536BA32BFC80FE0083CD04 /* OverlayingPlanesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayingPlanesViewController.swift; sourceTree = "<group>"; };
 		49536BA42BFC80FE0083CD04 /* OverlayingPlanesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OverlayingPlanesViewController.xib; sourceTree = "<group>"; };
@@ -167,6 +187,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		491DF7682C5B898F000BB1AA /* googlePixel */ = {
+			isa = PBXGroup;
+			children = (
+				491DF7632C5B898F000BB1AA /* Google-Pixel-XL-Black-Back.png */,
+				491DF7642C5B898F000BB1AA /* Phone_01.mtl */,
+				491DF7652C5B898F000BB1AA /* Phone_01.scn */,
+				491DF7662C5B898F000BB1AA /* pixel-screenshot.png */,
+				491DF7672C5B898F000BB1AA /* texture.jpg */,
+			);
+			path = googlePixel;
+			sourceTree = "<group>";
+		};
+		491DF76E2C5B8A2E000BB1AA /* ImageDetectionWithModel */ = {
+			isa = PBXGroup;
+			children = (
+				491DF76F2C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.swift */,
+				491DF7702C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.xib */,
+			);
+			path = ImageDetectionWithModel;
+			sourceTree = "<group>";
+		};
+		491DF7732C5B91BB000BB1AA /* snake */ = {
+			isa = PBXGroup;
+			children = (
+				491DF7882C5B94B5000BB1AA /* snake.scnassets */,
+			);
+			path = snake;
+			sourceTree = "<group>";
+		};
+		491DF7832C5B945C000BB1AA /* snakeResources */ = {
+			isa = PBXGroup;
+			children = (
+				491DF7812C5B945C000BB1AA /* snake.mtl */,
+				491DF7822C5B945C000BB1AA /* snake.obj */,
+			);
+			path = snakeResources;
+			sourceTree = "<group>";
+		};
 		49536BA22BFC80C50083CD04 /* OverlayingPlanes */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +352,7 @@
 				496403E82C2C245600DAA410 /* CoreML */,
 				4958E40F2BED0771007F1757 /* HelloWorld */,
 				497366722C4951BC0061C35E /* ImageDetection */,
+				491DF76E2C5B8A2E000BB1AA /* ImageDetectionWithModel */,
 				496403D82C2BEF3900DAA410 /* Lights */,
 				49536BB32BFCB9430083CD04 /* LoadingModels */,
 				4958E4122BED0771007F1757 /* Main */,
@@ -311,6 +370,9 @@
 		4958E4192BED0923007F1757 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				491DF7832C5B945C000BB1AA /* snakeResources */,
+				491DF7732C5B91BB000BB1AA /* snake */,
+				491DF7682C5B898F000BB1AA /* googlePixel */,
 				49621CEF2C4A9A0F00BE4506 /* chair */,
 				497366702C4946840061C35E /* big_buck_bunny.mp4 */,
 				49DA15F52C3DB1CB008DAEB4 /* portalItems */,
@@ -512,7 +574,9 @@
 				496403D72C2B1D1C00DAA410 /* farm.dae in Resources */,
 				49536BCE2BFCE4C90083CD04 /* missle-texture.png in Resources */,
 				49DA160D2C3DB6AF008DAEB4 /* chair.usdz in Resources */,
+				491DF7712C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.xib in Resources */,
 				4958E4142BED0771007F1757 /* art.scnassets in Resources */,
+				491DF7842C5B945C000BB1AA /* snake.mtl in Resources */,
 				496403F72C2D40B200DAA410 /* fish.dae in Resources */,
 				4958E4052BED072F007F1757 /* Base in Resources */,
 				49786B052C49677D00DBDEA9 /* ModelGesturesViewController.xib in Resources */,
@@ -536,8 +600,15 @@
 				49DA15F02C3DB149008DAEB4 /* WallPainting_01.obj in Resources */,
 				49536BBF2BFCBC1A0083CD04 /* tischholz2.jpg in Resources */,
 				49DA15EB2C3DB149008DAEB4 /* wallpaper.jpg in Resources */,
+				491DF76B2C5B898F000BB1AA /* Phone_01.scn in Resources */,
+				491DF7692C5B898F000BB1AA /* Google-Pixel-XL-Black-Back.png in Resources */,
+				491DF76A2C5B898F000BB1AA /* Phone_01.mtl in Resources */,
+				491DF7852C5B945C000BB1AA /* snake.obj in Resources */,
+				491DF7892C5B94B5000BB1AA /* snake.scnassets in Resources */,
 				496403DE2C2C02CC00DAA410 /* car.dae in Resources */,
 				49DA15F12C3DB149008DAEB4 /* wood-floor.jpg in Resources */,
+				491DF76D2C5B898F000BB1AA /* texture.jpg in Resources */,
+				491DF76C2C5B898F000BB1AA /* pixel-screenshot.png in Resources */,
 				49536BC02BFCBC1A0083CD04 /* bench.dae in Resources */,
 				497366762C4951D30061C35E /* ImageDetectionViewController.xib in Resources */,
 				49536BD42BFCE4C90083CD04 /* smoke.scnp in Resources */,
@@ -561,6 +632,7 @@
 				497366752C4951D30061C35E /* ImageDetectionViewController.swift in Sources */,
 				49536BD62BFCE5290083CD04 /* Missile.swift in Sources */,
 				49536BB62BFCB9BC0083CD04 /* LoadingModelsViewController.swift in Sources */,
+				491DF7722C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.swift in Sources */,
 				49536BAE2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift in Sources */,
 				496403E32C2C032E00DAA410 /* RemoteCarViewController.swift in Sources */,
 				4998988E2C3DAD7300D7612E /* PortalSceneViewController.swift in Sources */,

@@ -20,91 +20,57 @@ enum Scene: CaseIterable {
     case portals
     case arVideo
     case imageDetection
+    case imageDetectionWithModel
     case modelGestures
-
+    
     var title: String {
         switch self {
-        case .helloWorld:
-            return "Hello World"
-        case .overlayingPlanes:
-            return "Overlaying Planes"
-        case .enablingVirtualObjects:
-            return "Enabling Virtual Objects"
-        case .enablingPhysics:
-            return "Enabling Physics"
-        case .enablingPhysicsCollisions:
-            return "Enabling Physics Collisions"
-        case .applyingForces:
-            return "Applying Forces (Double tap)"
-        case .loadingModels:
-            return "Loading Models"
-        case .missileLaunch:
-            return "Missile Launch"
-        case .colladaModels:
-            return "Collada (DAE) Models"
-        case .lightsDefaultLighting:
-            return "Lights - DefaultLighting"
-        case .lightsSpotLight:
-            return "Lights - SpotLight"
-        case .lightsRoomLightEstimation:
-            return "Lights - Estimated Room Light"
-        case .remoteCar:
-            return "Remote car"
-        case .arCoreML:
-            return "AR + CoreML"
-        case .occlusion:
-            return "Occlusion"
-        case .portals:
-            return "Portals"
-        case .arVideo:
-            return "AR Video"
-        case .imageDetection:
-            return "Image detection"
-        case .modelGestures:
-            return "Model Gestures"
+        case .helloWorld: "Hello World"
+        case .overlayingPlanes: "Overlaying Planes"
+        case .enablingVirtualObjects: "Enabling Virtual Objects"
+        case .enablingPhysics: "Enabling Physics"
+        case .enablingPhysicsCollisions: "Enabling Physics Collisions"
+        case .applyingForces: "Applying Forces (Double tap)"
+        case .loadingModels: "Loading Models"
+        case .missileLaunch: "Missile Launch"
+        case .colladaModels: "Collada (DAE) Models"
+        case .lightsDefaultLighting: "Lights - DefaultLighting"
+        case .lightsSpotLight: "Lights - SpotLight"
+        case .lightsRoomLightEstimation: "Lights - Estimated Room Light"
+        case .remoteCar: "Remote car"
+        case .arCoreML: "AR + CoreML"
+        case .occlusion: "Occlusion"
+        case .portals: "Portals"
+        case .arVideo: "AR Video"
+        case .imageDetection: "Image detection"
+        case .imageDetectionWithModel: "Image detection with model"
+        case .modelGestures: "Model Gestures"
         }
     }
-
+    
     var viewController: UIViewController {
         switch self {
-        case .helloWorld:
-            return HelloWorldViewController()
-        case .overlayingPlanes:
-            return OverlayingPlanesViewController()
-        case .enablingVirtualObjects:
-            return PlacingVirtualObjectsViewController()
-        case .enablingPhysics:
-            return PlacingVirtualObjectsViewController(physics: true)
-        case .enablingPhysicsCollisions:
-            return PlacingVirtualObjectsViewController(physics: true, collisions: true)
-        case .applyingForces:
-            return PlacingVirtualObjectsViewController(physics: true, collisions: true, forces: true)
-        case .loadingModels:
-            return LoadingModelsViewController()
-        case .missileLaunch:
-            return MissileLaunchViewController()
-        case .colladaModels:
-            return ColladaSceneViewController()
-        case .lightsDefaultLighting:
-            return LightsSceneViewController(mode: .defaultLight)
-        case .lightsSpotLight:
-            return LightsSceneViewController(mode: .spotLight)
-        case .lightsRoomLightEstimation:
-            return LightsSceneViewController(mode: .spotLightWithRoomLightEstimation)
-        case .remoteCar:
-            return RemoteCarViewController()
-        case .arCoreML:
-            return CoreMLSceneViewController()
-        case .occlusion:
-            return OcclusionSceneViewController()
-        case .portals:
-            return PortalSceneViewController()
-        case .arVideo:
-            return ARVideoViewController()
-        case .imageDetection:
-            return ImageDetectionViewController()
-        case .modelGestures:
-            return ModelGesturesViewController()
+        case .helloWorld: HelloWorldViewController()
+        case .overlayingPlanes: OverlayingPlanesViewController()
+        case .enablingVirtualObjects: PlacingVirtualObjectsViewController()
+        case .enablingPhysics: PlacingVirtualObjectsViewController(physics: true)
+        case .enablingPhysicsCollisions: PlacingVirtualObjectsViewController(physics: true, collisions: true)
+        case .applyingForces: PlacingVirtualObjectsViewController(physics: true, collisions: true, forces: true)
+        case .loadingModels: LoadingModelsViewController()
+        case .missileLaunch: MissileLaunchViewController()
+        case .colladaModels: ColladaSceneViewController()
+        case .lightsDefaultLighting: LightsSceneViewController(mode: .defaultLight)
+        case .lightsSpotLight: LightsSceneViewController(mode: .spotLight)
+        case .lightsRoomLightEstimation: LightsSceneViewController(mode: .spotLightWithRoomLightEstimation)
+        case .remoteCar: RemoteCarViewController()
+        case .arCoreML: CoreMLSceneViewController()
+        case .occlusion: OcclusionSceneViewController()
+        case .portals: PortalSceneViewController()
+        case .arVideo: ARVideoViewController()
+        case .imageDetection: ImageDetectionViewController()
+        case .imageDetectionWithModel: ImageDetectionWithModelViewController()
+        case .modelGestures: ModelGesturesViewController()
         }
     }
+    
 }
