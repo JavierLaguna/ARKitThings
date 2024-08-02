@@ -7,6 +7,20 @@ final class ImageDetectionWithModelViewController: UIViewController {
     
     @IBOutlet private weak var sceneView: ARSCNView!
     
+    private let trakingEnabled: Bool
+    
+    init(trakingEnabled: Bool = false) {
+        self.trakingEnabled = trakingEnabled
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        trakingEnabled = false
+        
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,10 +35,16 @@ final class ImageDetectionWithModelViewController: UIViewController {
             fatalError("Missing expected asset catalog resources.")
         }
         
-        let configuration = ARWorldTrackingConfiguration()
-        configuration.detectionImages = referenceImages
-        
-        sceneView.session.run(configuration)
+        if trakingEnabled {
+            let configuration = ARImageTrackingConfiguration()
+            configuration.trackingImages = referenceImages
+            sceneView.session.run(configuration)
+            
+        } else {
+            let configuration = ARWorldTrackingConfiguration()
+            configuration.detectionImages = referenceImages
+            sceneView.session.run(configuration)
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -39,7 +59,7 @@ extension ImageDetectionWithModelViewController: ARSCNViewDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
         guard let imageAnchor = anchor as? ARImageAnchor,
-            let name = imageAnchor.referenceImage.name else {
+              let name = imageAnchor.referenceImage.name else {
             return
         }
         
@@ -55,10 +75,10 @@ extension ImageDetectionWithModelViewController: ARSCNViewDelegate {
         }
         
         guard let modelScene = SCNScene(named: sceneName),
-                let modelNode = modelScene.rootNode.childNode(
-                    withName: sceneNode,
-                    recursively: true
-                ) else {
+              let modelNode = modelScene.rootNode.childNode(
+                withName: sceneNode,
+                recursively: true
+              ) else {
             return
         }
         
@@ -77,7 +97,12 @@ extension ImageDetectionWithModelViewController: ARSCNViewDelegate {
             anchor.transform.columns.3.z
         )
         
-        sceneView.scene.rootNode.addChildNode(modelNode)
+        if trakingEnabled {
+            node.addChildNode(modelNode)
+            
+        } else {
+            sceneView.scene.rootNode.addChildNode(modelNode)
+        }
     }
 }
 

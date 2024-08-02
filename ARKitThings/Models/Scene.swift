@@ -19,9 +19,10 @@ enum Scene: CaseIterable {
     case occlusion
     case portals
     case arVideo
+    case modelGestures
     case imageDetection
     case imageDetectionWithModel
-    case modelGestures
+    case imageTraking
     
     var title: String {
         switch self {
@@ -45,6 +46,7 @@ enum Scene: CaseIterable {
         case .imageDetection: "Image detection"
         case .imageDetectionWithModel: "Image detection with model"
         case .modelGestures: "Model Gestures"
+        case .imageTraking: "Image tracking"
         }
     }
     
@@ -70,6 +72,7 @@ enum Scene: CaseIterable {
         case .imageDetection: ImageDetectionViewController()
         case .imageDetectionWithModel: ImageDetectionWithModelViewController()
         case .modelGestures: ModelGesturesViewController()
+        case .imageTraking: ImageDetectionWithModelViewController(trakingEnabled: true)
         }
     }
     
