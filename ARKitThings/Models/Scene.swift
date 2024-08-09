@@ -23,6 +23,7 @@ enum Scene: CaseIterable {
     case imageDetection
     case imageDetectionWithModel
     case imageTraking
+    case detect3DObject
     
     var title: String {
         switch self {
@@ -47,6 +48,7 @@ enum Scene: CaseIterable {
         case .imageDetectionWithModel: "Image detection with model"
         case .modelGestures: "Model Gestures"
         case .imageTraking: "Image tracking"
+        case .detect3DObject: "Detect 3D Object"
         }
     }
     
@@ -73,6 +75,7 @@ enum Scene: CaseIterable {
         case .imageDetectionWithModel: ImageDetectionWithModelViewController()
         case .modelGestures: ModelGesturesViewController()
         case .imageTraking: ImageDetectionWithModelViewController(trakingEnabled: true)
+        case .detect3DObject: Detect3DObjectViewController()
         }
     }
     
