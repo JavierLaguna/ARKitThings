@@ -78,6 +78,8 @@
 		497366712C4946840061C35E /* big_buck_bunny.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 497366702C4946840061C35E /* big_buck_bunny.mp4 */; };
 		497366752C4951D30061C35E /* ImageDetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497366732C4951D30061C35E /* ImageDetectionViewController.swift */; };
 		497366762C4951D30061C35E /* ImageDetectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497366742C4951D30061C35E /* ImageDetectionViewController.xib */; };
+		4974035F2C81F5220025C5F5 /* RealisticModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4974035D2C81F5220025C5F5 /* RealisticModelViewController.swift */; };
+		497403602C81F5220025C5F5 /* RealisticModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4974035E2C81F5220025C5F5 /* RealisticModelViewController.xib */; };
 		49786B042C49677D00DBDEA9 /* ModelGesturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49786B022C49677D00DBDEA9 /* ModelGesturesViewController.swift */; };
 		49786B052C49677D00DBDEA9 /* ModelGesturesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49786B032C49677D00DBDEA9 /* ModelGesturesViewController.xib */; };
 		4998988E2C3DAD7300D7612E /* PortalSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */; };
@@ -166,6 +168,8 @@
 		497366702C4946840061C35E /* big_buck_bunny.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = big_buck_bunny.mp4; sourceTree = "<group>"; };
 		497366732C4951D30061C35E /* ImageDetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectionViewController.swift; sourceTree = "<group>"; };
 		497366742C4951D30061C35E /* ImageDetectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageDetectionViewController.xib; sourceTree = "<group>"; };
+		4974035D2C81F5220025C5F5 /* RealisticModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealisticModelViewController.swift; sourceTree = "<group>"; };
+		4974035E2C81F5220025C5F5 /* RealisticModelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealisticModelViewController.xib; sourceTree = "<group>"; };
 		49786B022C49677D00DBDEA9 /* ModelGesturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGesturesViewController.swift; sourceTree = "<group>"; };
 		49786B032C49677D00DBDEA9 /* ModelGesturesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModelGesturesViewController.xib; sourceTree = "<group>"; };
 		4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalSceneViewController.swift; sourceTree = "<group>"; };
@@ -376,6 +380,7 @@
 				49536BA22BFC80C50083CD04 /* OverlayingPlanes */,
 				49536BAB2BFC98790083CD04 /* PlacingVirtualObjects */,
 				4998988B2C3DAD5300D7612E /* Portal */,
+				4974035C2C81F4EF0025C5F5 /* RealisticModel */,
 				496403DF2C2C031400DAA410 /* RemoteCar */,
 			);
 			path = Scenes;
@@ -489,6 +494,15 @@
 			path = ModelGestures;
 			sourceTree = "<group>";
 		};
+		4974035C2C81F4EF0025C5F5 /* RealisticModel */ = {
+			isa = PBXGroup;
+			children = (
+				4974035D2C81F5220025C5F5 /* RealisticModelViewController.swift */,
+				4974035E2C81F5220025C5F5 /* RealisticModelViewController.xib */,
+			);
+			path = RealisticModel;
+			sourceTree = "<group>";
+		};
 		4998988B2C3DAD5300D7612E /* Portal */ = {
 			isa = PBXGroup;
 			children = (
@@ -590,6 +604,7 @@
 				49DA160D2C3DB6AF008DAEB4 /* chair.usdz in Resources */,
 				491DF7712C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.xib in Resources */,
 				4958E4142BED0771007F1757 /* art.scnassets in Resources */,
+				497403602C81F5220025C5F5 /* RealisticModelViewController.xib in Resources */,
 				491DF7842C5B945C000BB1AA /* snake.mtl in Resources */,
 				496403F72C2D40B200DAA410 /* fish.dae in Resources */,
 				4935FBDE2C65FDD3005991BB /* Detect3DObjectViewController.xib in Resources */,
@@ -648,6 +663,7 @@
 				49536BD62BFCE5290083CD04 /* Missile.swift in Sources */,
 				49536BB62BFCB9BC0083CD04 /* LoadingModelsViewController.swift in Sources */,
 				491DF7722C5B8A4A000BB1AA /* ImageDetectionWithModelViewController.swift in Sources */,
+				4974035F2C81F5220025C5F5 /* RealisticModelViewController.swift in Sources */,
 				49536BAE2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.swift in Sources */,
 				496403E32C2C032E00DAA410 /* RemoteCarViewController.swift in Sources */,
 				4998988E2C3DAD7300D7612E /* PortalSceneViewController.swift in Sources */,
