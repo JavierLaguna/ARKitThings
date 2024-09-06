@@ -86,6 +86,24 @@
 		4998988F2C3DAD7300D7612E /* PortalSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */; };
 		499898912C3DAEC000D7612E /* portal.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 499898902C3DAEC000D7612E /* portal.scnassets */; };
 		499A3A692C5A4CD000B77050 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499A3A682C5A4CD000B77050 /* Scene.swift */; };
+		49ADDE712C8B0FE700333CCE /* ARWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ADDE6F2C8B0FE700333CCE /* ARWatchViewController.swift */; };
+		49ADDE722C8B0FE700333CCE /* ARWatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE702C8B0FE700333CCE /* ARWatchViewController.xib */; };
+		49ADDE832C8B16DF00333CCE /* chasiki.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE742C8B16DE00333CCE /* chasiki.tga.png */; };
+		49ADDE842C8B16DF00333CCE /* 11.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE752C8B16DE00333CCE /* 11.tga.png */; };
+		49ADDE852C8B16DF00333CCE /* cifri.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE762C8B16DE00333CCE /* cifri.tga.png */; };
+		49ADDE862C8B16DF00333CCE /* 15.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE772C8B16DE00333CCE /* 15.tga.png */; };
+		49ADDE872C8B16DF00333CCE /* 10.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE782C8B16DE00333CCE /* 10.tga.png */; };
+		49ADDE882C8B16DF00333CCE /* watch-model.dae in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE792C8B16DE00333CCE /* watch-model.dae */; };
+		49ADDE892C8B16DF00333CCE /* chasiki2.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE7A2C8B16DF00333CCE /* chasiki2.tga.png */; };
+		49ADDE8A2C8B16DF00333CCE /* 12.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE7B2C8B16DF00333CCE /* 12.tga.png */; };
+		49ADDE8B2C8B16DF00333CCE /* 14.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE7C2C8B16DF00333CCE /* 14.tga.png */; };
+		49ADDE8C2C8B16DF00333CCE /* chasiki4.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE7D2C8B16DF00333CCE /* chasiki4.tga.png */; };
+		49ADDE8D2C8B16DF00333CCE /* 6.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE7E2C8B16DF00333CCE /* 6.tga.png */; };
+		49ADDE8E2C8B16DF00333CCE /* remeshok.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE7F2C8B16DF00333CCE /* remeshok.tga.png */; };
+		49ADDE8F2C8B16DF00333CCE /* 5.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE802C8B16DF00333CCE /* 5.tga.png */; };
+		49ADDE902C8B16DF00333CCE /* chasiki3.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE812C8B16DF00333CCE /* chasiki3.tga.png */; };
+		49ADDE912C8B16DF00333CCE /* 9.tga.png in Resources */ = {isa = PBXBuildFile; fileRef = 49ADDE822C8B16DF00333CCE /* 9.tga.png */; };
+		49ADDE932C8B1BF800333CCE /* ColorSwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ADDE922C8B1BF800333CCE /* ColorSwatch.swift */; };
 		49DA15EB2C3DB149008DAEB4 /* wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E12C3DB148008DAEB4 /* wallpaper.jpg */; };
 		49DA15EC2C3DB149008DAEB4 /* WallPainting_01.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E22C3DB148008DAEB4 /* WallPainting_01.mtl */; };
 		49DA15ED2C3DB149008DAEB4 /* tiles-wall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DA15E32C3DB148008DAEB4 /* tiles-wall.jpg */; };
@@ -176,6 +194,24 @@
 		4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortalSceneViewController.xib; sourceTree = "<group>"; };
 		499898902C3DAEC000D7612E /* portal.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = portal.scnassets; sourceTree = "<group>"; };
 		499A3A682C5A4CD000B77050 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		49ADDE6F2C8B0FE700333CCE /* ARWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARWatchViewController.swift; sourceTree = "<group>"; };
+		49ADDE702C8B0FE700333CCE /* ARWatchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARWatchViewController.xib; sourceTree = "<group>"; };
+		49ADDE742C8B16DE00333CCE /* chasiki.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chasiki.tga.png; sourceTree = "<group>"; };
+		49ADDE752C8B16DE00333CCE /* 11.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.tga.png; sourceTree = "<group>"; };
+		49ADDE762C8B16DE00333CCE /* cifri.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cifri.tga.png; sourceTree = "<group>"; };
+		49ADDE772C8B16DE00333CCE /* 15.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15.tga.png; sourceTree = "<group>"; };
+		49ADDE782C8B16DE00333CCE /* 10.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10.tga.png; sourceTree = "<group>"; };
+		49ADDE792C8B16DE00333CCE /* watch-model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = "watch-model.dae"; sourceTree = "<group>"; };
+		49ADDE7A2C8B16DF00333CCE /* chasiki2.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chasiki2.tga.png; sourceTree = "<group>"; };
+		49ADDE7B2C8B16DF00333CCE /* 12.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.tga.png; sourceTree = "<group>"; };
+		49ADDE7C2C8B16DF00333CCE /* 14.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14.tga.png; sourceTree = "<group>"; };
+		49ADDE7D2C8B16DF00333CCE /* chasiki4.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chasiki4.tga.png; sourceTree = "<group>"; };
+		49ADDE7E2C8B16DF00333CCE /* 6.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.tga.png; sourceTree = "<group>"; };
+		49ADDE7F2C8B16DF00333CCE /* remeshok.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remeshok.tga.png; sourceTree = "<group>"; };
+		49ADDE802C8B16DF00333CCE /* 5.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.tga.png; sourceTree = "<group>"; };
+		49ADDE812C8B16DF00333CCE /* chasiki3.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chasiki3.tga.png; sourceTree = "<group>"; };
+		49ADDE822C8B16DF00333CCE /* 9.tga.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.tga.png; sourceTree = "<group>"; };
+		49ADDE922C8B1BF800333CCE /* ColorSwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSwatch.swift; sourceTree = "<group>"; };
 		49DA15E12C3DB148008DAEB4 /* wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wallpaper.jpg; sourceTree = "<group>"; };
 		49DA15E22C3DB148008DAEB4 /* WallPainting_01.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WallPainting_01.mtl; sourceTree = "<group>"; };
 		49DA15E32C3DB148008DAEB4 /* tiles-wall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tiles-wall.jpg"; sourceTree = "<group>"; };
@@ -365,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				4973666B2C4946040061C35E /* ARVideo */,
+				49ADDE6E2C8B0FCE00333CCE /* ARWatch */,
 				496403D12C2B1C6F00DAA410 /* ColladaScene */,
 				496403E82C2C245600DAA410 /* CoreML */,
 				4935FBDB2C65FDAD005991BB /* Detect3DObject */,
@@ -389,6 +426,7 @@
 		4958E4192BED0923007F1757 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				49ADDE732C8B16C000333CCE /* watch */,
 				491DF7832C5B945C000BB1AA /* snakeResources */,
 				491DF7732C5B91BB000BB1AA /* snake */,
 				491DF7682C5B898F000BB1AA /* googlePixel */,
@@ -513,6 +551,38 @@
 			path = Portal;
 			sourceTree = "<group>";
 		};
+		49ADDE6E2C8B0FCE00333CCE /* ARWatch */ = {
+			isa = PBXGroup;
+			children = (
+				49ADDE6F2C8B0FE700333CCE /* ARWatchViewController.swift */,
+				49ADDE702C8B0FE700333CCE /* ARWatchViewController.xib */,
+				49ADDE922C8B1BF800333CCE /* ColorSwatch.swift */,
+			);
+			path = ARWatch;
+			sourceTree = "<group>";
+		};
+		49ADDE732C8B16C000333CCE /* watch */ = {
+			isa = PBXGroup;
+			children = (
+				49ADDE802C8B16DF00333CCE /* 5.tga.png */,
+				49ADDE7E2C8B16DF00333CCE /* 6.tga.png */,
+				49ADDE822C8B16DF00333CCE /* 9.tga.png */,
+				49ADDE782C8B16DE00333CCE /* 10.tga.png */,
+				49ADDE752C8B16DE00333CCE /* 11.tga.png */,
+				49ADDE7B2C8B16DF00333CCE /* 12.tga.png */,
+				49ADDE7C2C8B16DF00333CCE /* 14.tga.png */,
+				49ADDE772C8B16DE00333CCE /* 15.tga.png */,
+				49ADDE742C8B16DE00333CCE /* chasiki.tga.png */,
+				49ADDE7A2C8B16DF00333CCE /* chasiki2.tga.png */,
+				49ADDE812C8B16DF00333CCE /* chasiki3.tga.png */,
+				49ADDE7D2C8B16DF00333CCE /* chasiki4.tga.png */,
+				49ADDE762C8B16DE00333CCE /* cifri.tga.png */,
+				49ADDE7F2C8B16DF00333CCE /* remeshok.tga.png */,
+				49ADDE792C8B16DE00333CCE /* watch-model.dae */,
+			);
+			path = watch;
+			sourceTree = "<group>";
+		};
 		49DA15F52C3DB1CB008DAEB4 /* portalItems */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,18 +656,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49ADDE8D2C8B16DF00333CCE /* 6.tga.png in Resources */,
 				496403DB2C2BEF7B00DAA410 /* LightsSceneViewController.xib in Resources */,
 				49536BC52BFCE3DC0083CD04 /* MissileLaunchViewController.xib in Resources */,
 				497366712C4946840061C35E /* big_buck_bunny.mp4 in Resources */,
 				49621CF22C4A9A0F00BE4506 /* NeilFabricPlain008.jpg in Resources */,
 				49536BD12BFCE4C90083CD04 /* spark.png in Resources */,
 				49536BCF2BFCE4C90083CD04 /* fire.scnp in Resources */,
+				49ADDE8B2C8B16DF00333CCE /* 14.tga.png in Resources */,
 				4998988F2C3DAD7300D7612E /* PortalSceneViewController.xib in Resources */,
 				499898912C3DAEC000D7612E /* portal.scnassets in Resources */,
 				49621CF02C4A9A0F00BE4506 /* chair.dae in Resources */,
 				4958E4162BED0771007F1757 /* HelloWorldViewController.xib in Resources */,
 				49621CF12C4A9A0F00BE4506 /* Neil Woo03.jpg in Resources */,
 				4958E4022BED072F007F1757 /* Assets.xcassets in Resources */,
+				49ADDE842C8B16DF00333CCE /* 11.tga.png in Resources */,
 				4958E4182BED0771007F1757 /* MainViewController.xib in Resources */,
 				496403D72C2B1D1C00DAA410 /* farm.dae in Resources */,
 				49536BCE2BFCE4C90083CD04 /* missle-texture.png in Resources */,
@@ -608,6 +681,7 @@
 				491DF7842C5B945C000BB1AA /* snake.mtl in Resources */,
 				496403F72C2D40B200DAA410 /* fish.dae in Resources */,
 				4935FBDE2C65FDD3005991BB /* Detect3DObjectViewController.xib in Resources */,
+				49ADDE8F2C8B16DF00333CCE /* 5.tga.png in Resources */,
 				4958E4052BED072F007F1757 /* Base in Resources */,
 				49786B052C49677D00DBDEA9 /* ModelGesturesViewController.xib in Resources */,
 				496403EB2C2C247800DAA410 /* CoreMLSceneViewController.xib in Resources */,
@@ -615,12 +689,15 @@
 				497366692C4941EC0061C35E /* iron_bed.mtl in Resources */,
 				49536BBE2BFCBC1A0083CD04 /* _6.jpg in Resources */,
 				496403E22C2C032E00DAA410 /* RemoteCarViewController.xib in Resources */,
+				49ADDE872C8B16DF00333CCE /* 10.tga.png in Resources */,
 				496403F42C2C788B00DAA410 /* OcclusionSceneViewController.xib in Resources */,
 				49536BAA2BFC8A840083CD04 /* overlay_grid.png in Resources */,
+				49ADDE722C8B0FE700333CCE /* ARWatchViewController.xib in Resources */,
 				49536BAF2BFC98CF0083CD04 /* PlacingVirtualObjectsViewController.xib in Resources */,
 				496403D42C2B1C9100DAA410 /* ColladaSceneViewController.xib in Resources */,
 				49536BD02BFCE4C90083CD04 /* smoke.png in Resources */,
 				4973666A2C4941EC0061C35E /* iron_bed.obj in Resources */,
+				49ADDE832C8B16DF00333CCE /* chasiki.tga.png in Resources */,
 				49536BB72BFCB9BC0083CD04 /* LoadingModelsViewController.xib in Resources */,
 				49DA15EC2C3DB149008DAEB4 /* WallPainting_01.mtl in Resources */,
 				49536BBD2BFCBC1A0083CD04 /* tischholz.jpg in Resources */,
@@ -630,18 +707,27 @@
 				49DA15F02C3DB149008DAEB4 /* WallPainting_01.obj in Resources */,
 				49536BBF2BFCBC1A0083CD04 /* tischholz2.jpg in Resources */,
 				49DA15EB2C3DB149008DAEB4 /* wallpaper.jpg in Resources */,
+				49ADDE852C8B16DF00333CCE /* cifri.tga.png in Resources */,
 				491DF76B2C5B898F000BB1AA /* Phone_01.scn in Resources */,
+				49ADDE8A2C8B16DF00333CCE /* 12.tga.png in Resources */,
 				491DF7692C5B898F000BB1AA /* Google-Pixel-XL-Black-Back.png in Resources */,
+				49ADDE912C8B16DF00333CCE /* 9.tga.png in Resources */,
+				49ADDE882C8B16DF00333CCE /* watch-model.dae in Resources */,
 				491DF76A2C5B898F000BB1AA /* Phone_01.mtl in Resources */,
 				491DF7852C5B945C000BB1AA /* snake.obj in Resources */,
+				49ADDE8C2C8B16DF00333CCE /* chasiki4.tga.png in Resources */,
 				491DF7892C5B94B5000BB1AA /* snake.scnassets in Resources */,
 				496403DE2C2C02CC00DAA410 /* car.dae in Resources */,
 				49DA15F12C3DB149008DAEB4 /* wood-floor.jpg in Resources */,
+				49ADDE902C8B16DF00333CCE /* chasiki3.tga.png in Resources */,
 				491DF76D2C5B898F000BB1AA /* texture.jpg in Resources */,
 				491DF76C2C5B898F000BB1AA /* pixel-screenshot.png in Resources */,
+				49ADDE892C8B16DF00333CCE /* chasiki2.tga.png in Resources */,
+				49ADDE862C8B16DF00333CCE /* 15.tga.png in Resources */,
 				49536BC02BFCBC1A0083CD04 /* bench.dae in Resources */,
 				497366762C4951D30061C35E /* ImageDetectionViewController.xib in Resources */,
 				49536BD42BFCE4C90083CD04 /* smoke.scnp in Resources */,
+				49ADDE8E2C8B16DF00333CCE /* remeshok.tga.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,6 +739,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				497366622C493E450061C35E /* PortalPlane.swift in Sources */,
+				49ADDE712C8B0FE700333CCE /* ARWatchViewController.swift in Sources */,
 				49536BA52BFC80FE0083CD04 /* OverlayingPlanesViewController.swift in Sources */,
 				49536BB22BFCA6840083CD04 /* BodyType.swift in Sources */,
 				49536BA82BFC88120083CD04 /* OverlayPlane.swift in Sources */,
@@ -670,6 +757,7 @@
 				49536BC42BFCE3DC0083CD04 /* MissileLaunchViewController.swift in Sources */,
 				4935FBDF2C65FDD3005991BB /* Detect3DObjectViewController.swift in Sources */,
 				49345A072C2D56BF00DD3553 /* OcclusionPlane.swift in Sources */,
+				49ADDE932C8B1BF800333CCE /* ColorSwatch.swift in Sources */,
 				496403F02C2C28BF00DAA410 /* Resnet50.mlmodel in Sources */,
 				496403EC2C2C247800DAA410 /* CoreMLSceneViewController.swift in Sources */,
 				496403F52C2C788B00DAA410 /* OcclusionSceneViewController.swift in Sources */,
