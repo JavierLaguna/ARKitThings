@@ -82,6 +82,9 @@
 		497403602C81F5220025C5F5 /* RealisticModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4974035E2C81F5220025C5F5 /* RealisticModelViewController.xib */; };
 		49786B042C49677D00DBDEA9 /* ModelGesturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49786B022C49677D00DBDEA9 /* ModelGesturesViewController.swift */; };
 		49786B052C49677D00DBDEA9 /* ModelGesturesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49786B032C49677D00DBDEA9 /* ModelGesturesViewController.xib */; };
+		498697032C8B2D4D00ACFB14 /* ARCL in Frameworks */ = {isa = PBXBuildFile; productRef = 498697022C8B2D4D00ACFB14 /* ARCL */; };
+		498697072C8B2EEC00ACFB14 /* ARCoreLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498697052C8B2EEC00ACFB14 /* ARCoreLocationViewController.swift */; };
+		498697082C8B2EEC00ACFB14 /* ARCoreLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 498697062C8B2EEC00ACFB14 /* ARCoreLocationViewController.xib */; };
 		4998988E2C3DAD7300D7612E /* PortalSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */; };
 		4998988F2C3DAD7300D7612E /* PortalSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */; };
 		499898912C3DAEC000D7612E /* portal.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 499898902C3DAEC000D7612E /* portal.scnassets */; };
@@ -190,6 +193,8 @@
 		4974035E2C81F5220025C5F5 /* RealisticModelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RealisticModelViewController.xib; sourceTree = "<group>"; };
 		49786B022C49677D00DBDEA9 /* ModelGesturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelGesturesViewController.swift; sourceTree = "<group>"; };
 		49786B032C49677D00DBDEA9 /* ModelGesturesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModelGesturesViewController.xib; sourceTree = "<group>"; };
+		498697052C8B2EEC00ACFB14 /* ARCoreLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCoreLocationViewController.swift; sourceTree = "<group>"; };
+		498697062C8B2EEC00ACFB14 /* ARCoreLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARCoreLocationViewController.xib; sourceTree = "<group>"; };
 		4998988C2C3DAD7300D7612E /* PortalSceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortalSceneViewController.swift; sourceTree = "<group>"; };
 		4998988D2C3DAD7300D7612E /* PortalSceneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PortalSceneViewController.xib; sourceTree = "<group>"; };
 		499898902C3DAEC000D7612E /* portal.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = portal.scnassets; sourceTree = "<group>"; };
@@ -225,6 +230,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498697032C8B2D4D00ACFB14 /* ARCL in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +406,7 @@
 		4958E4132BED0771007F1757 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				498697042C8B2ED900ACFB14 /* ARCoreLocation */,
 				4973666B2C4946040061C35E /* ARVideo */,
 				49ADDE6E2C8B0FCE00333CCE /* ARWatch */,
 				496403D12C2B1C6F00DAA410 /* ColladaScene */,
@@ -541,6 +548,15 @@
 			path = RealisticModel;
 			sourceTree = "<group>";
 		};
+		498697042C8B2ED900ACFB14 /* ARCoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				498697052C8B2EEC00ACFB14 /* ARCoreLocationViewController.swift */,
+				498697062C8B2EEC00ACFB14 /* ARCoreLocationViewController.xib */,
+			);
+			path = ARCoreLocation;
+			sourceTree = "<group>";
+		};
 		4998988B2C3DAD5300D7612E /* Portal */ = {
 			isa = PBXGroup;
 			children = (
@@ -614,6 +630,9 @@
 			dependencies = (
 			);
 			name = ARKitThings;
+			packageProductDependencies = (
+				498697022C8B2D4D00ACFB14 /* ARCL */,
+			);
 			productName = ARKitThings;
 			productReference = 4958E3F52BED072E007F1757 /* ARKitThings.app */;
 			productType = "com.apple.product-type.application";
@@ -642,6 +661,9 @@
 				Base,
 			);
 			mainGroup = 4958E3EC2BED072E007F1757;
+			packageReferences = (
+				498697012C8B2D4D00ACFB14 /* XCRemoteSwiftPackageReference "ARKit-CoreLocation" */,
+			);
 			productRefGroup = 4958E3F62BED072E007F1757 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -658,6 +680,7 @@
 			files = (
 				49ADDE8D2C8B16DF00333CCE /* 6.tga.png in Resources */,
 				496403DB2C2BEF7B00DAA410 /* LightsSceneViewController.xib in Resources */,
+				498697082C8B2EEC00ACFB14 /* ARCoreLocationViewController.xib in Resources */,
 				49536BC52BFCE3DC0083CD04 /* MissileLaunchViewController.xib in Resources */,
 				497366712C4946840061C35E /* big_buck_bunny.mp4 in Resources */,
 				49621CF22C4A9A0F00BE4506 /* NeilFabricPlain008.jpg in Resources */,
@@ -759,6 +782,7 @@
 				49345A072C2D56BF00DD3553 /* OcclusionPlane.swift in Sources */,
 				49ADDE932C8B1BF800333CCE /* ColorSwatch.swift in Sources */,
 				496403F02C2C28BF00DAA410 /* Resnet50.mlmodel in Sources */,
+				498697072C8B2EEC00ACFB14 /* ARCoreLocationViewController.swift in Sources */,
 				496403EC2C2C247800DAA410 /* CoreMLSceneViewController.swift in Sources */,
 				496403F52C2C788B00DAA410 /* OcclusionSceneViewController.swift in Sources */,
 				496403E72C2C0F2000DAA410 /* Car.swift in Sources */,
@@ -983,6 +1007,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		498697012C8B2D4D00ACFB14 /* XCRemoteSwiftPackageReference "ARKit-CoreLocation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AndrewHartAR/ARKit-CoreLocation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		498697022C8B2D4D00ACFB14 /* ARCL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 498697012C8B2D4D00ACFB14 /* XCRemoteSwiftPackageReference "ARKit-CoreLocation" */;
+			productName = ARCL;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4958E3ED2BED072E007F1757 /* Project object */;
 }
